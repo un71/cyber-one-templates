@@ -1,1 +1,178 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "MagistralC";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/magistralc/MagistralC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MagistralC";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/magistralc/MagistralC-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/arial/ARIAL.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/arial/ARIALBD.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("/fonts/arial/ARIALI.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("/fonts/arial/ARIALBI.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial Narrow";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/arial/ARIALN.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial Narrow";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/arial/ARIALNB.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial Narrow";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("/fonts/arial/ARIALNI.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial Narrow";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("/fonts/arial/ARIALNBI.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/arial/ArialMdm.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+  src: url("/fonts/arial/ArialMdmItl.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial Black";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/arial/ARIBLK.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial Black";
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+  src: url("/fonts/arial/ARIALBLACKITALIC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/arial/ARIALLGT.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+  src: url("/fonts/arial/ARIALLGTITL.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial CE";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/arial/ArialCE.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial CE";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/arial/arialceb.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial CE";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("/fonts/arial/ArialCEItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial CE";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("/fonts/arial/ArialCEBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial CE MT Black";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/arial/ArialCEMTBlack.woff") format("woff");
+}
+
+@utility container {
+  @apply mx-auto px-[24px];
+}
+
+@theme {
+  --font-arial: "Arial", sans-serif;
+  --font-magistralc: "MagistralC", sans-serif;
+}
