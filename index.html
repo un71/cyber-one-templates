@@ -1,24 +1,11 @@
-<!doctype html>
-<html
-  class="h-full !scroll-smooth [color-scheme:dark] [&_*::selection]:bg-white [&_*::selection]:text-[#16192B]"
-  lang="ru"
->
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CYBER ONE</title>
-    <meta name="theme-color" content="#16192B" />
-    <meta name="color-scheme" content="dark" />
-    <meta
-      name="description"
-      content="Помогите компаниям защитить свои продукты и заработайте"
-    />
-  </head>
-  <body
-    class="rendering-speed font-arial h-full bg-[#16192B] text-[18px] leading-[24px] font-normal text-white antialiased [&::-webkit-scrollbar]:w-[8px] [&::-webkit-scrollbar-thumb]:bg-[#03E4E1] [&::-webkit-scrollbar-track]:bg-transparent"
-  >
-    <div class="flex h-full flex-col"></div>
-    <script type="module" src="/src/index.ts"></script>
-  </body>
-</html>
+{% extends "./src/html/layouts/layout.html" %} {% block content %}
+<section>
+  <div class="container">
+    <div>
+      <header>
+        <h1>Home</h1>
+      </header>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -8,7 +8,7 @@ import tseslint from "typescript-eslint";
 export default [
   eslintPluginPrettierRecommended,
   eslintConfigPrettier,
-  { ignores: ["build", "node_modules"] },
+  { ignores: ["node_modules"] },
   { files: ["**/*.{js,mjs,cjs,ts}"] },
   { languageOptions: { globals: globals.browser } },
   pluginJs.configs.recommended,
