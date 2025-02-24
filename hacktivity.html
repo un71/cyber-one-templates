@@ -1,10 +1,522 @@
 {% extends "./src/html/layouts/layout.html" %} {% block content %}
 <section>
   <div class="container">
-    <div>
+    <div class="py-[48px]">
       <header>
-        <h1>hacktivity</h1>
+        <h1
+          class="text-[16px] md:text-[36px] uppercase leading-[18px] md:leading-[51px] font-black"
+        >
+          Последние активности
+        </h1>
+        <p
+          class="text-[12px] md:text-[24px] leading-[13px] md:leading-[26px] mt-[4px] md:mt-[12px]"
+        >
+          Список последних действий пользователей на платформе
+        </p>
       </header>
+      <div class="mt-[16px] md:mt-[24px]">
+        <div>
+          <a
+            class="flex flex-col py-[12px] gap-y-[9px] transition-[background-color,padding] ease-in-out duration-300 px-0 border-b border-b-[#03E4E1] [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:px-[12px]"
+            href="#article"
+          >
+            <h3
+              class="text-[14px] leading-[16px] font-bold text-[#03E4E1] md:text-[28px] md:leading-[32px]"
+            >
+              Новая программа
+            </h3>
+            <p
+              class="text-[12px] leading-[14px] md:text-[24px] md:leading-[26px]"
+            >
+              Компания Qazcloud запустила программу “Program”
+            </p>
+            <time
+              class="text-[10px] leading-[11px] md:text-[18px] md:leading-[20px]"
+              >19.02.2024</time
+            >
+          </a>
+          <a
+            class="flex flex-col py-[12px] gap-y-[9px] transition-[background-color,padding] ease-in-out duration-300 px-0 border-b border-b-[#03E4E1] [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:px-[12px]"
+            href="#article"
+          >
+            <h3
+              class="text-[14px] leading-[16px] font-bold text-[#03E4E1] md:text-[28px] md:leading-[32px]"
+            >
+              Новый отчет
+            </h3>
+            <p
+              class="text-[12px] leading-[14px] md:text-[24px] md:leading-[26px]"
+            >
+              Пользователь добавил новый отчет
+            </p>
+            <time
+              class="text-[10px] leading-[11px] md:text-[18px] md:leading-[20px]"
+              >19.02.2024</time
+            >
+          </a>
+          <a
+            class="flex flex-col py-[12px] gap-y-[9px] transition-[background-color,padding] ease-in-out duration-300 px-0 border-b border-b-[#03E4E1] [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:px-[12px]"
+            href="#article"
+          >
+            <h3
+              class="text-[14px] leading-[16px] font-bold text-[#03E4E1] md:text-[28px] md:leading-[32px]"
+            >
+              Новая программа
+            </h3>
+            <p
+              class="text-[12px] leading-[14px] md:text-[24px] md:leading-[26px]"
+            >
+              Компания Qazcloud запустила программу “Program”
+            </p>
+            <time
+              class="text-[10px] leading-[11px] md:text-[18px] md:leading-[20px]"
+              >19.02.2024</time
+            >
+          </a>
+        </div>
+        <div class="flex items-center justify-end mt-[12px] md:mt-[24px]">
+          <a
+            class="md:text-[22px] md:leading-[24px] text-[14px] leading-[16px] inline-block text-[#03E4E1] [@media(hover:hover)]:hover:opacity-60 transition-opacity ease-in-out duration-300 active:opacity-60"
+            href="#all"
+            >Показать все</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="md:mt-[48px] mt-[24px]">
+  <div class="container">
+    <div>
+      <div
+        class="flex lg:flex-row flex-col items-center justify-between gap-[12px]"
+      >
+        <h2
+          class="text-[16px] md:text-[36px] uppercase leading-[18px] md:leading-[51px] font-black"
+        >
+          награда багхантеров
+        </h2>
+        <div
+          class="grid grid-cols-3 md:flex items-center overflow-hidden border border-[#03E4E1] rounded-[8px]"
+        >
+          <a
+            class="text-[12px] leading-[14px] md:text-[24px] md:leading-[26px] inline-block py-[8px] px-[16px] md:px-[12px] md:py-[10px] text-[#03E4E1] [@media(hover:hover)]:hover:bg-[#03E4E1]/25 transition-colors ease-in-out duration-300 active:bg-[#03E4E1]/25 aria-[selected=true]:bg-[#03E4E1]/25"
+            aria-selected="true"
+            href="#filter"
+            >По рейтингам</a
+          >
+          <a
+            class="text-[12px] border-x border-x-[#03E4E1] leading-[14px] md:text-[24px] md:leading-[26px] inline-block py-[8px] px-[16px] md:px-[12px] md:py-[10px] text-[#03E4E1] [@media(hover:hover)]:hover:bg-[#03E4E1]/25 transition-colors ease-in-out duration-300 active:bg-[#03E4E1]/25 aria-[selected=true]:bg-[#03E4E1]/25"
+            href="#filter"
+            >По выплатам</a
+          >
+          <a
+            class="text-[12px] leading-[14px] md:text-[24px] md:leading-[26px] inline-block py-[8px] px-[16px] md:px-[12px] md:py-[10px] text-[#03E4E1] [@media(hover:hover)]:hover:bg-[#03E4E1]/25 transition-colors ease-in-out duration-300 active:bg-[#03E4E1]/25 aria-[selected=true]:bg-[#03E4E1]/25"
+            href="#filter"
+            >По отчетам</a
+          >
+        </div>
+      </div>
+      <div>
+        <div class="mt-[12px] md:mt-[24px]">
+          <!-- DESKTOP TABLE START -->
+          <div class="overflow-x-auto lg:block hidden">
+            <table class="w-full table-fixed border-collapse">
+              <thead>
+                <tr
+                  class="[&>th:first-child]:rounded-tl-[12px] [&>th:last-child]:rounded-tr-[12px]"
+                >
+                  <th
+                    class="text-start text-[20px] bg-[#DCDDDE] leading-[22px] font-normal py-[12px] px-[24px] text-[#16192B]"
+                  >
+                    #
+                  </th>
+                  <th
+                    class="text-start text-[20px] bg-[#DCDDDE] leading-[22px] font-normal py-[12px] px-[24px] text-[#16192B]"
+                  >
+                    Имя пользователя
+                  </th>
+                  <th
+                    class="text-start text-[20px] bg-[#DCDDDE] leading-[22px] font-normal py-[12px] px-[24px] text-[#16192B]"
+                  >
+                    Рейтинг
+                  </th>
+                  <th
+                    class="text-start text-[20px] bg-[#DCDDDE] leading-[22px] font-normal py-[12px] px-[24px] text-[#16192B]"
+                  >
+                    Подтвержденные уязвимости
+                  </th>
+                  <th
+                    class="text-start text-[20px] bg-[#DCDDDE] leading-[22px] font-normal py-[12px] px-[24px] text-[#16192B]"
+                  >
+                    Общая награда ($)
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    <span
+                      class="flex items-center justify-center font-bold size-[40px] rounded-full data-[first]:bg-[linear-gradient(180deg,#E6EE5C_0%,#E29325_100%)] data-[second]:bg-[linear-gradient(180deg,#D1D1D1_0%,#7B7874_100%)] data-[third]:bg-[linear-gradient(180deg,#DFBC64_0%,#6B512D_100%)]"
+                      data-first
+                      >1</span
+                    >
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    <div class="flex items-center gap-x-[8px]">
+                      <div
+                        class="size-[44px] overflow-hidden bg-[#D9D9D9] rounded-full"
+                      >
+                        <img
+                          src="/mock-avatar.png"
+                          width="44"
+                          height="44"
+                          alt="nickname"
+                        />
+                      </div>
+                      <span>nickname</span>
+                    </div>
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    10
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    2
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    <span class="font-bold text-[#03E4E1]">5000$</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    <span
+                      class="flex items-center justify-center font-bold size-[40px] rounded-full data-[first]:bg-[linear-gradient(180deg,#E6EE5C_0%,#E29325_100%)] data-[second]:bg-[linear-gradient(180deg,#D1D1D1_0%,#7B7874_100%)] data-[third]:bg-[linear-gradient(180deg,#DFBC64_0%,#6B512D_100%)]"
+                      data-second
+                      >2</span
+                    >
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    <div class="flex items-center gap-x-[8px]">
+                      <div
+                        class="size-[44px] overflow-hidden bg-[#D9D9D9] rounded-full"
+                      ></div>
+                      <span>nickname</span>
+                    </div>
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    10
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    2
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    <span class="font-bold text-[#03E4E1]">5000$</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    <span
+                      class="flex items-center justify-center font-bold size-[40px] rounded-full data-[first]:bg-[linear-gradient(180deg,#E6EE5C_0%,#E29325_100%)] data-[second]:bg-[linear-gradient(180deg,#D1D1D1_0%,#7B7874_100%)] data-[third]:bg-[linear-gradient(180deg,#DFBC64_0%,#6B512D_100%)]"
+                      data-third
+                      >3</span
+                    >
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    <div class="flex items-center gap-x-[8px]">
+                      <div
+                        class="size-[44px] overflow-hidden bg-[#D9D9D9] rounded-full"
+                      ></div>
+                      <span>nickname</span>
+                    </div>
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    10
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    2
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    <span class="font-bold text-[#03E4E1]">5000$</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    <span
+                      class="flex items-center justify-center font-bold size-[40px] rounded-full data-[first]:bg-[linear-gradient(180deg,#E6EE5C_0%,#E29325_100%)] data-[second]:bg-[linear-gradient(180deg,#D1D1D1_0%,#7B7874_100%)] data-[third]:bg-[linear-gradient(180deg,#DFBC64_0%,#6B512D_100%)]"
+                      >4</span
+                    >
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    <div class="flex items-center gap-x-[8px]">
+                      <div
+                        class="size-[44px] overflow-hidden bg-[#D9D9D9] rounded-full"
+                      ></div>
+                      <span>nickname</span>
+                    </div>
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    10
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    2
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[20px] leading-[22px] font-normal"
+                  >
+                    <span class="font-bold text-[#03E4E1]">5000$</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- DESKTOP TABLE END -->
+
+          <!-- MOBILE TABLE START -->
+          <div class="flex flex-col gap-y-[12px] lg:hidden">
+            <article class="bg-[#25293F] rounded-[8px]">
+              <div class="py-[8px] px-[12px]">
+                <span
+                  class="flex items-center justify-center font-bold size-[40px] rounded-full data-[first]:bg-[linear-gradient(180deg,#E6EE5C_0%,#E29325_100%)] data-[second]:bg-[linear-gradient(180deg,#D1D1D1_0%,#7B7874_100%)] data-[third]:bg-[linear-gradient(180deg,#DFBC64_0%,#6B512D_100%)]"
+                  data-first
+                  >1</span
+                >
+              </div>
+              <div class="border-t border-t-[#03E4E1] p-[12px]">
+                <div class="flex items-center gap-x-[8px]">
+                  <div
+                    class="size-[24px] overflow-hidden bg-[#D9D9D9] rounded-full"
+                  >
+                    <img
+                      src="/mock-avatar.png"
+                      width="24"
+                      height="24"
+                      alt="nickname"
+                    />
+                  </div>
+                  <span>nickname</span>
+                </div>
+                <div
+                  class="flex items-center gap-[8px] mt-[8px] flex-wrap text-[10px] leading-[12px] text-[#777A87]"
+                >
+                  <p>Рейтинг: 10</p>
+                  <p>Подтвержденные уязвимости: 2</p>
+                </div>
+                <p class="text-[#03E4E1] text-[14px] leading-[16px] mt-[8px]">
+                  Общая награда: 5000$
+                </p>
+              </div>
+            </article>
+            <article class="bg-[#25293F] rounded-[8px]">
+              <div class="py-[8px] px-[12px]">
+                <span
+                  class="flex items-center justify-center font-bold size-[40px] rounded-full data-[first]:bg-[linear-gradient(180deg,#E6EE5C_0%,#E29325_100%)] data-[second]:bg-[linear-gradient(180deg,#D1D1D1_0%,#7B7874_100%)] data-[third]:bg-[linear-gradient(180deg,#DFBC64_0%,#6B512D_100%)]"
+                  data-second
+                  >2</span
+                >
+              </div>
+              <div class="border-t border-t-[#03E4E1] p-[12px]">
+                <div class="flex items-center gap-x-[8px]">
+                  <div
+                    class="size-[24px] overflow-hidden bg-[#D9D9D9] rounded-full"
+                  >
+                    <img
+                      src="/mock-avatar.png"
+                      width="24"
+                      height="24"
+                      alt="nickname"
+                    />
+                  </div>
+                  <span>nickname</span>
+                </div>
+                <div
+                  class="flex items-center gap-[8px] mt-[8px] flex-wrap text-[10px] leading-[12px] text-[#777A87]"
+                >
+                  <p>Рейтинг: 10</p>
+                  <p>Подтвержденные уязвимости: 2</p>
+                </div>
+                <p class="text-[#03E4E1] text-[14px] leading-[16px] mt-[8px]">
+                  Общая награда: 5000$
+                </p>
+              </div>
+            </article>
+            <article class="bg-[#25293F] rounded-[8px]">
+              <div class="py-[8px] px-[12px]">
+                <span
+                  class="flex items-center justify-center font-bold size-[40px] rounded-full data-[first]:bg-[linear-gradient(180deg,#E6EE5C_0%,#E29325_100%)] data-[second]:bg-[linear-gradient(180deg,#D1D1D1_0%,#7B7874_100%)] data-[third]:bg-[linear-gradient(180deg,#DFBC64_0%,#6B512D_100%)]"
+                  data-third
+                  >3</span
+                >
+              </div>
+              <div class="border-t border-t-[#03E4E1] p-[12px]">
+                <div class="flex items-center gap-x-[8px]">
+                  <div
+                    class="size-[24px] overflow-hidden bg-[#D9D9D9] rounded-full"
+                  >
+                    <img
+                      src="/mock-avatar.png"
+                      width="24"
+                      height="24"
+                      alt="nickname"
+                    />
+                  </div>
+                  <span>nickname</span>
+                </div>
+                <div
+                  class="flex items-center gap-[8px] mt-[8px] flex-wrap text-[10px] leading-[12px] text-[#777A87]"
+                >
+                  <p>Рейтинг: 10</p>
+                  <p>Подтвержденные уязвимости: 2</p>
+                </div>
+                <p class="text-[#03E4E1] text-[14px] leading-[16px] mt-[8px]">
+                  Общая награда: 5000$
+                </p>
+              </div>
+            </article>
+            <article class="bg-[#25293F] rounded-[8px]">
+              <div class="py-[8px] px-[12px]">
+                <span
+                  class="flex items-center justify-center font-bold size-[40px] rounded-full data-[first]:bg-[linear-gradient(180deg,#E6EE5C_0%,#E29325_100%)] data-[second]:bg-[linear-gradient(180deg,#D1D1D1_0%,#7B7874_100%)] data-[third]:bg-[linear-gradient(180deg,#DFBC64_0%,#6B512D_100%)]"
+                  >4</span
+                >
+              </div>
+              <div class="border-t border-t-[#03E4E1] p-[12px]">
+                <div class="flex items-center gap-x-[8px]">
+                  <div
+                    class="size-[24px] overflow-hidden bg-[#D9D9D9] rounded-full"
+                  >
+                    <img
+                      src="/mock-avatar.png"
+                      width="24"
+                      height="24"
+                      alt="nickname"
+                    />
+                  </div>
+                  <span>nickname</span>
+                </div>
+                <div
+                  class="flex items-center gap-[8px] mt-[8px] flex-wrap text-[10px] leading-[12px] text-[#777A87]"
+                >
+                  <p>Рейтинг: 10</p>
+                  <p>Подтвержденные уязвимости: 2</p>
+                </div>
+                <p class="text-[#03E4E1] text-[14px] leading-[16px] mt-[8px]">
+                  Общая награда: 5000$
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- MOBILE TABLE END -->
+        </div>
+        <div
+          class="flex items-center justify-center md:justify-end mt-[12px] md:mt-[24px]"
+        >
+          <div class="flex items-center gap-[12px] md:gap-[24px] flex-wrap">
+            <button
+              class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
+              type="button"
+            >
+              <svg
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.7327 4.18172V2.45628C14.7327 2.30672 14.5608 2.22413 14.4447 2.31565L4.38224 10.175C4.29674 10.2415 4.22756 10.3267 4.17998 10.4239C4.13239 10.5212 4.10765 10.6281 4.10765 10.7364C4.10765 10.8447 4.13239 10.9516 4.17998 11.0489C4.22756 11.1462 4.29674 11.2313 4.38224 11.2978L14.4447 19.1572C14.563 19.2487 14.7327 19.1661 14.7327 19.0165V17.2911C14.7327 17.1817 14.6813 17.0768 14.5965 17.0098L6.56081 10.7375L14.5965 4.46297C14.6813 4.39601 14.7327 4.2911 14.7327 4.18172Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <button
+              class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
+              type="button"
+              aria-selected="true"
+            >
+              1
+            </button>
+            <button
+              class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
+              type="button"
+            >
+              2
+            </button>
+            <button
+              class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
+              type="button"
+            >
+              3
+            </button>
+            <button
+              class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
+              type="button"
+            >
+              4
+            </button>
+            <button
+              class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
+              type="button"
+            >
+              5
+            </button>
+            <button
+              class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
+              type="button"
+            >
+              <svg
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.26732 4.18172V2.45628C5.26732 2.30672 5.43919 2.22413 5.55526 2.31565L15.6178 10.175C15.7033 10.2415 15.7724 10.3267 15.82 10.4239C15.8676 10.5212 15.8923 10.6281 15.8923 10.7364C15.8923 10.8447 15.8676 10.9516 15.82 11.0489C15.7724 11.1462 15.7033 11.2313 15.6178 11.2978L5.55526 19.1572C5.43696 19.2487 5.26732 19.1661 5.26732 19.0165V17.2911C5.26732 17.1817 5.31866 17.0768 5.40348 17.0098L13.4392 10.7375L5.40348 4.46297C5.31866 4.39601 5.26732 4.2911 5.26732 4.18172V4.18172Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

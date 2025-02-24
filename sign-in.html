@@ -1,0 +1,135 @@
+{% extends "./src/html/layouts/layout-login.html" %} {% block content %}
+
+<form class="max-w-[486px]" method="post">
+  <img
+    class="md:w-[244px] h-auto w-[180px]"
+    src="/logo-white-full.svg"
+    width="244"
+    height="62"
+    alt="CYBER ONE"
+  />
+  <h2
+    class="mt-[24px] md:mt-[61px] text-[16px] md:text-[32px] leading-[18px] md:leading-[45px] font-black uppercase"
+  >
+    Добро пожаловать обратно!
+  </h2>
+  <p
+    class="mt-[8px] text-[14px] leading-[16px] md:text-[18px] md:leading-[20px]"
+  >
+    Войдите в свой аккаунт, чтобы продолжить поиск уязвимостей и получать
+    награды
+  </p>
+  <div class="mt-[12px] md:mt-[24px] flex flex-col">
+    <div>
+      <div>
+        <input
+          class="text-[12px] leading-[14px] placeholder:text-[12px] placeholder:leading-[14px] inline-block rounded-[8px] text-[#DCDDDE] border border-[#DCDDDE] md:text-[20px] font-normal md:leading-[22px] w-full px-[24px] py-[12px] placeholder:text-[#777A87] bg-transparent placeholder:md:text-[20px] placeholder:md:leading-[22px] data-[is-error=true]:border-[#DA4848] transition-colors ease-in-out duration-300"
+          type="email"
+          inputmode="email"
+          name="email"
+          required
+          placeholder="Email"
+          data-is-error="false"
+        />
+      </div>
+      <p class="text-[#DA4848] text-[12px] leading-[14px] mt-[8px]">
+        Обязательное поле
+      </p>
+    </div>
+    <div class="mt-[12px] md:mt-[24px]">
+      <div class="relative">
+        <input
+          class="text-[12px] leading-[14px] placeholder:text-[12px] placeholder:leading-[14px] inline-block rounded-[8px] text-[#DCDDDE] border border-[#DCDDDE] md:text-[20px] font-normal md:leading-[22px] w-full px-[24px] py-[12px] placeholder:text-[#777A87] bg-transparent placeholder:md:text-[20px] placeholder:md:leading-[22px] data-[is-error=true]:border-[#DA4848] transition-colors ease-in-out duration-300"
+          id="password"
+          type="password"
+          name="password"
+          required
+          placeholder="Пароль"
+          data-is-error="false"
+        />
+        <button
+          class="absolute top-2/4 right-[24px] -translate-y-2/4 size-[20px] cursor-pointer [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] transition-colors ease-in-out duration-300 group"
+          id="togglePassword"
+          type="button"
+          data-password-view="false"
+        >
+          <svg
+            class="absolute top-2/4 translate-y-[-50%] left-2/4 translate-x-[-50%] group-data-[password-view=true]:opacity-0 group-data-[password-view=false]:opacity-100 transition-opacity ease-in-out duration-300"
+            width="20"
+            height="21"
+            viewBox="0 0 20 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 7.89453C9.337 7.89453 8.70111 8.15792 8.23227 8.62676C7.76343 9.0956 7.50004 9.73149 7.50004 10.3945C7.50004 11.0576 7.76343 11.6935 8.23227 12.1623C8.70111 12.6311 9.337 12.8945 10 12.8945C10.6631 12.8945 11.299 12.6311 11.7678 12.1623C12.2366 11.6935 12.5 11.0576 12.5 10.3945C12.5 9.73149 12.2366 9.0956 11.7678 8.62676C11.299 8.15792 10.6631 7.89453 10 7.89453ZM10 14.5612C8.89497 14.5612 7.83516 14.1222 7.05376 13.3408C6.27236 12.5594 5.83337 11.4996 5.83337 10.3945C5.83337 9.28946 6.27236 8.22965 7.05376 7.44825C7.83516 6.66685 8.89497 6.22786 10 6.22786C11.1051 6.22786 12.1649 6.66685 12.9463 7.44825C13.7277 8.22965 14.1667 9.28946 14.1667 10.3945C14.1667 11.4996 13.7277 12.5594 12.9463 13.3408C12.1649 14.1222 11.1051 14.5612 10 14.5612ZM10 4.14453C5.83337 4.14453 2.27504 6.7362 0.833374 10.3945C2.27504 14.0529 5.83337 16.6445 10 16.6445C14.1667 16.6445 17.725 14.0529 19.1667 10.3945C17.725 6.7362 14.1667 4.14453 10 4.14453Z"
+              fill="currentColor"
+            />
+          </svg>
+          <svg
+            class="absolute top-2/4 translate-y-[-50%] left-2/4 translate-x-[-50%] group-data-[password-view=false]:opacity-0 group-data-[password-view=true]:opacity-100 transition-opacity ease-in-out duration-300"
+            viewBox="64 64 896 896"
+            focusable="false"
+            width="1em"
+            height="1em"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M942.2 486.2Q889.47 375.11 816.7 305l-50.88 50.88C807.31 395.53 843.45 447.4 874.7 512 791.5 684.2 673.4 766 512 766q-72.67 0-133.87-22.38L323 798.75Q408 838 512 838q288.3 0 430.2-300.3a60.29 60.29 0 000-51.5zm-63.57-320.64L836 122.88a8 8 0 00-11.32 0L715.31 232.2Q624.86 186 512 186q-288.3 0-430.2 300.3a60.3 60.3 0 000 51.5q56.69 119.4 136.5 191.41L112.48 835a8 8 0 000 11.31L155.17 889a8 8 0 0011.31 0l712.15-712.12a8 8 0 000-11.32zM149.3 512C232.6 339.8 350.7 258 512 258c54.54 0 104.13 9.36 149.12 28.39l-70.3 70.3a176 176 0 00-238.13 238.13l-83.42 83.42C223.1 637.49 183.3 582.28 149.3 512zm246.7 0a112.11 112.11 0 01146.2-106.69L401.31 546.2A112 112 0 01396 512z"
+            ></path>
+            <path
+              d="M508 624c-3.46 0-6.87-.16-10.25-.47l-52.82 52.82a176.09 176.09 0 00227.42-227.42l-52.82 52.82c.31 3.38.47 6.79.47 10.25a111.94 111.94 0 01-112 112z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <p class="text-[#DA4848] text-[12px] leading-[14px] mt-[8px]">
+        Обязательное поле
+      </p>
+    </div>
+    <div class="mt-[12px] flex justify-end">
+      <a
+        class="inline-block text-[12px] leading-[14px] md:text-[18px] md:leading-[20px] text-[#03E4E1]"
+        href="/recovery-password"
+        >Забыли пароль?</a
+      >
+    </div>
+    <button
+      class="text-[12px] leading-[14px] md:text-[24px] md:leading-[26px] w-full mt-[24px] md:mt-[32px] text-center bg-[#03E4E1] text-white p-[8px] md:p-[12px] rounded-[4px] md:rounded-[8px] cursor-pointer [@media(hover:hover)]:hover:opacity-60 active:opacity-60 transition-opacity ease-in-out duration-300"
+      type="submit"
+    >
+      Войти
+    </button>
+    <p
+      class="text-[12px] leading-[14px] md:text-[22px] md:leading-[24px] mt-[8px] md:mt-[12px]"
+    >
+      <span>Нет аккаунта?</span>
+      <a
+        class="inline-block text-[#03E4E1] [@media(hover:hover)]:hover:opacity-60 transition-opacity ease-in-out duration-300 active:opacity-60"
+        href="/sign-up"
+        >Зарегистрироваться</a
+      >
+    </p>
+    <p
+      class="text-[10px] leading-[12px] md:text-[18px] md:leading-[20px] mt-[12px] md:mt-[24px]"
+    >
+      <span
+        >Продолжая, вы подтверждаете, что прочитали, поняли и согласились
+        с</span
+      >
+      <a
+        class="text-[#03E4E1] [@media(hover:hover)]:hover:opacity-60 transition-opacity ease-in-out duration-300 active:opacity-60"
+        href="#"
+        >Условиями использования</a
+      >
+      и
+      <a
+        class="text-[#03E4E1] [@media(hover:hover)]:hover:opacity-60 transition-opacity ease-in-out duration-300 active:opacity-60"
+        href="#"
+        >Политикой конфиденциальности</a
+      >
+    </p>
+  </div>
+</form>
+{% endblock %}

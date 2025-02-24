@@ -1,5 +1,6 @@
 import "./index.css";
 import "./menu";
+import "./password";
 
 document.addEventListener("DOMContentLoaded", () => {
   const dropdown = document.getElementById("lang-switcher") as HTMLElement;

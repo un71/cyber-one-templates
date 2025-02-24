@@ -19,9 +19,23 @@
     class="rendering-speed font-arial h-full bg-[#16192B] text-[18px] leading-[24px] font-normal text-[#DCDDDE] antialiased [&::-webkit-scrollbar]:w-[8px] [&::-webkit-scrollbar-thumb]:bg-[#03E4E1] [&::-webkit-scrollbar-track]:bg-transparent"
   >
     <div class="flex h-full flex-col">
-      {% include "../components/header.html" %}
-      <main class="flex-auto">{% block content %} {% endblock %}</main>
-      {% include "../components/footer.html" %}
+      <main class="flex-auto">
+        <section class="grid lg:grid-cols-2 h-full">
+          <div
+            class="bg-[linear-gradient(180deg,#43B6C2_0%,#19BDCF_25%,#02D1E8_50%,#21818B_100%)] rounded-r-[16px] pl-[86px] pr-[26px] flex-col justify-center items-center lg:flex hidden"
+          >
+            <h1
+              class="text-6xl 2xl:text-[64px] font-magistralc font-bold 2xl:leading-[73px]"
+            >
+              Ищи уязвимости, помогай компаниям защищаться и получай заслуженное
+              вознаграждение.
+            </h1>
+          </div>
+          <div class="flex flex-col justify-center items-center p-[16px]">
+            {% block content %} {% endblock %}
+          </div>
+        </section>
+      </main>
     </div>
     <script type="module" src="/src/index.ts"></script>
   </body>
