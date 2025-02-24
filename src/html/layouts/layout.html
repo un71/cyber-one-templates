@@ -18,8 +18,10 @@
   <body
     class="rendering-speed font-arial h-full bg-[#16192B] text-[18px] leading-[24px] font-normal text-white antialiased [&::-webkit-scrollbar]:w-[8px] [&::-webkit-scrollbar-thumb]:bg-[#03E4E1] [&::-webkit-scrollbar-track]:bg-transparent"
   >
-    <div class="flex h-full flex-col">
+    <div class="flex h-full flex-col overflow-clip">
+      {% include "../components/header.html" %}
       <main class="flex-auto">{% block content %} {% endblock %}</main>
+      {% include "../components/footer.html" %}
     </div>
     <script type="module" src="/src/index.ts"></script>
   </body>

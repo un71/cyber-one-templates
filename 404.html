@@ -1,0 +1,42 @@
+{% extends "./src/html/layouts/layout.html" %} {% block content %}
+<section
+  class="h-full relative before:content-[''] before:fixed before:-top-[135px] md:before:-top-[266px] before:-left-[66px] md:before:-left-[248px] before:w-[260px] md:before:w-[690px] before:rounded-full before:h-[260px] md:before:h-[690px] before:bg-[#03E4E1] before:z-[-1] before:blur-[115px] before:opacity-20 after:content-[''] after:fixed after:-bottom-[44px] md:after:-bottom-[63px] after:-right-[80px] md:after:-right-[364px] after:w-[260px] md:after:w-[690px] after:rounded-full after:h-[260px] md:after:h-[690px] after:bg-[#03E4E1] after:z-[-1] after:blur-[115px] after:opacity-20"
+>
+  <div class="container h-full">
+    <div class="h-full flex items-center justify-center">
+      <header class="flex flex-col items-center justify-center text-center">
+        <h1
+          class="text-[36px] leading-[41px] md:text-[240px] md:leading-[274px] font-magistralc font-bold text-[#03E4E1]"
+        >
+          404
+        </h1>
+        <p
+          class="text-[14px] max-w-[328px] md:max-w-[1166px] leading-[15px] md:text-[36px] md:leading-[39px] font-normal"
+        >
+          Ой! Такой страницы нет. Похоже, вы забрели не туда. Возможно, страница
+          была удалена или её никогда не существовало.
+        </p>
+        <a
+          class="flex mt-[24px] md:mt-[48px] items-center justify-center gap-x-[10px] md:rounded-[8px] rounded-[8px] bg-[#03E4E1] text-white py-[7px] px-[10px] md:p-[12px] transition-colors ease-in-out duration-300 text-[12px] md:text-[24px] leading-[13px] md:leading-[26px] font-normal [@media(hover:hover)]:hover:bg-[#03C4C1]/25 [@media(hover:hover)]:hover:text-[#03C4C1]"
+          href="/"
+        >
+          <svg
+            class="w-[16px] md:w-[24px] h-auto"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.6423 10.9827H5.96999L15.3503 2.83984C15.5003 2.70859 15.4093 2.46484 15.2111 2.46484H12.8405C12.7361 2.46484 12.6369 2.50234 12.5593 2.56931L2.43695 11.3523C2.34424 11.4327 2.26989 11.5321 2.21893 11.6437C2.16797 11.7553 2.1416 11.8765 2.1416 11.9992C2.1416 12.1219 2.16797 12.2432 2.21893 12.3548C2.26989 12.4664 2.34424 12.5657 2.43695 12.6461L12.6182 21.4827C12.6584 21.5175 12.7066 21.5363 12.7575 21.5363H15.2084C15.4066 21.5363 15.4977 21.2898 15.3477 21.1613L5.96999 13.0184H21.6423C21.7602 13.0184 21.8566 12.922 21.8566 12.8041V11.197C21.8566 11.0791 21.7602 10.9827 21.6423 10.9827Z"
+              fill="currentColor"
+            />
+          </svg>
+          <span>Вернуться на главную страницу</span>
+        </a>
+      </header>
+    </div>
+  </div>
+</section>
+{% endblock %}

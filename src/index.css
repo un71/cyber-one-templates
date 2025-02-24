@@ -169,7 +169,7 @@
 }
 
 @utility container {
-  @apply mx-auto px-[24px];
+  @apply mx-auto px-[16px];
 }
 
 @theme {

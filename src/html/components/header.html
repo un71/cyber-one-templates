@@ -1,0 +1,113 @@
+<header>
+  <div class="container">
+    <div class="flex items-center justify-between py-[12px] md:py-[24px]">
+      <a aria-label="Home" title="Home" href="/">
+        <img
+          class="inline-block w-[100px] md:w-[224px] h-auto"
+          alt="CYBER ONE"
+          src="/logo-white-full.svg"
+          width="224"
+          height="58"
+        />
+      </a>
+      <nav class="xl:flex hidden items-center gap-x-[24px]">
+        <ul
+          class="flex items-center gap-x-[24px] flex-wrap justify-end gap-y-[8px]"
+        >
+          <li class="flex items-center justify-center">
+            <a
+              class="text-[24px] relative leading-[26px] py-[12px] font-normal before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:opacity-0 before:h-[2px] before:bg-[#03E4E1] before:transition-opacity before:duration-300 before:ease-in-out transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] aria-[current=page]:text-[#03E4E1] aria-[current=page]:before:opacity-100"
+              aria-current="page"
+              href="/"
+              >Главная</a
+            >
+          </li>
+          <li class="flex items-center justify-center">
+            <a
+              class="text-[24px] relative leading-[26px] py-[12px] font-normal before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:opacity-0 before:h-[2px] before:bg-[#03E4E1] before:transition-opacity before:duration-300 before:ease-in-out transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] aria-[current=page]:text-[#03E4E1] aria-[current=page]:before:opacity-100"
+              href="/hacktivity"
+              >Хакактивность</a
+            >
+          </li>
+          <li class="flex items-center justify-center">
+            <a
+              class="text-[24px] relative leading-[26px] py-[12px] font-normal before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:opacity-0 before:h-[2px] before:bg-[#03E4E1] before:transition-opacity before:duration-300 before:ease-in-out transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] aria-[current=page]:text-[#03E4E1] aria-[current=page]:before:opacity-100"
+              href="/programs"
+              >Программы</a
+            >
+          </li>
+          <li class="flex items-center justify-center">
+            <a
+              class="text-[24px] relative leading-[26px] py-[12px] font-normal before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:opacity-0 before:h-[2px] before:bg-[#03E4E1] before:transition-opacity before:duration-300 before:ease-in-out transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] aria-[current=page]:text-[#03E4E1] aria-[current=page]:before:opacity-100"
+              href="/reports"
+              >Отчеты</a
+            >
+          </li>
+          <li class="flex items-center justify-center">
+            <a
+              class="text-[24px] relative leading-[26px] py-[12px] font-normal before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:opacity-0 before:h-[2px] before:bg-[#03E4E1] before:transition-opacity before:duration-300 before:ease-in-out transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] aria-[current=page]:text-[#03E4E1] aria-[current=page]:before:opacity-100"
+              href="/moderation"
+              >Модерация</a
+            >
+          </li>
+        </ul>
+        <div class="relative group" id="lang-switcher" data-open="false">
+          <button
+            class="flex text-[24px] cursor-pointer leading-[26px] font-normal items-center gap-x-[4px] px-[8px] py-[4px] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] group-data-[open=true]:text-[#03E4E1]"
+            id="lang-switcher-trigger"
+            type="button"
+          >
+            <span>Рус</span>
+            <svg
+              class="w-[18px] h-auto group-data-[open=true]:rotate-180 transition-transform ease-in-out duration-300"
+              width="18"
+              height="19"
+              viewBox="0 0 18 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.473 4.72656H14.9663C14.8639 4.72656 14.7674 4.77679 14.7072 4.85915L8.99979 12.7261L3.29243 4.85915C3.23216 4.77679 3.13573 4.72656 3.03327 4.72656H1.52658C1.396 4.72656 1.31966 4.87522 1.396 4.9817L8.47948 14.7471C8.73662 15.1007 9.26296 15.1007 9.51809 14.7471L16.6016 4.9817C16.6799 4.87522 16.6036 4.72656 16.473 4.72656Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <ul
+            class="absolute top-full left-2/4 -translate-x-2/4 opacity-0 transition-[opacity,visibility] ease-in-out duration-300 z-10 pointer-events-none invisible group-data-[open=true]:opacity-100 group-data-[open=true]:pointer-events-auto group-data-[open=true]:visible"
+          >
+            <li class="flex items-center justify-center">
+              <a
+                class="inline-block text-[#03E4E1] w-[60px] rounded-t-[4px] p-[10px] bg-[#03E4E1]/25 text-[24px] leading-[26px] font-normal transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#16192B] active:text-[#16192B] [@media(hover:hover)]:hover:bg-[#03E4E1] active:bg-[#03E4E1] aria-[selected=true]:text-[#16192B] aria-[selected=true]:bg-[#03E4E1]"
+                href="#kz"
+              >
+                Қаз
+              </a>
+            </li>
+            <li class="flex items-center justify-center">
+              <a
+                class="inline-block text-[#03E4E1] w-[60px] p-[10px] text-[24px] bg-[#03E4E1]/25 leading-[26px] font-normal transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#16192B] active:text-[#16192B] [@media(hover:hover)]:hover:bg-[#03E4E1] active:bg-[#03E4E1] aria-[selected=true]:text-[#16192B] aria-[selected=true]:bg-[#03E4E1]"
+                href="#ru"
+                aria-selected="true"
+              >
+                Рус
+              </a>
+            </li>
+            <li class="flex items-center justify-center">
+              <a
+                class="inline-block text-[#03E4E1] w-[60px] rounded-b-[4px] p-[10px] bg-[#03E4E1]/25 text-[24px] leading-[26px] font-normal transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#16192B] active:text-[#16192B] [@media(hover:hover)]:hover:bg-[#03E4E1] active:bg-[#03E4E1] aria-[selected=true]:text-[#16192B] aria-[selected=true]:bg-[#03E4E1]"
+                href="#en"
+              >
+                Eng
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a
+          class="hidden p-[12px] rounded-[8px] text-[24px] transition-colors ease-in-out duration-300 leading-[26px] font-normal xl:inline-block text-[#03E4E1] bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-[#16192B] [@media(hover:hover)]:hover:bg-[#03E4E1] active:text-[#16192B] active:bg-[#03E4E1]"
+          href="/sign-in"
+          >Войти</a
+        >
+      </nav>
+    </div>
+  </div>
+</header>
