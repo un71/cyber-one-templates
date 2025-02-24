@@ -10,56 +10,119 @@
           height="58"
         />
       </a>
-      <nav class="xl:flex hidden items-center gap-x-[24px]">
-        <ul
-          class="flex items-center gap-x-[24px] flex-wrap justify-end gap-y-[8px]"
+      <nav
+        class="flex items-center gap-x-[12px] md:gap-x-[24px] group"
+        id="menu"
+        data-menu-open="false"
+      >
+        <div
+          class="xl:static fixed w-screen h-svh top-0 left-0 xl:translate-x-0 -translate-x-full xl:w-auto xl:h-auto xl:z-auto z-50 xl:bg-transparent bg-[#25293F] group-data-[menu-open=true]:translate-x-0 transition-transform ease-in-out duration-300"
         >
-          <li class="flex items-center justify-center">
-            <a
-              class="text-[24px] relative leading-[26px] py-[12px] font-normal before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:opacity-0 before:h-[2px] before:bg-[#03E4E1] before:transition-opacity before:duration-300 before:ease-in-out transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] aria-[current=page]:text-[#03E4E1] aria-[current=page]:before:opacity-100"
-              aria-current="page"
-              href="/"
-              >Главная</a
+          <div class="container xl:max-w-auto xl:mx-0 xl:px-0">
+            <div
+              class="flex items-center xl:hidden justify-between py-[12px] md:py-[24px]"
             >
-          </li>
-          <li class="flex items-center justify-center">
-            <a
-              class="text-[24px] relative leading-[26px] py-[12px] font-normal before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:opacity-0 before:h-[2px] before:bg-[#03E4E1] before:transition-opacity before:duration-300 before:ease-in-out transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] aria-[current=page]:text-[#03E4E1] aria-[current=page]:before:opacity-100"
-              href="/hacktivity"
-              >Хакактивность</a
+              <a aria-label="Home" title="Home" href="/">
+                <img
+                  class="inline-block w-[100px] md:w-[224px] h-auto"
+                  alt="CYBER ONE"
+                  src="/logo-white-full.svg"
+                  width="224"
+                  height="58"
+                />
+              </a>
+              <button
+                class="flex items-center justify-center xl:hidden size-[24px] cursor-pointer [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] transition-colors ease-in-out duration-300"
+                id="menu-trigger-close"
+                type="button"
+                aria-label="Close menu"
+                title="Close menu"
+              >
+                <svg
+                  class="md:w-[24px] h-auto w-[16px]"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.92473 7.99916L13.6122 2.41166C13.6908 2.31881 13.6247 2.17773 13.5033 2.17773H12.0783C11.9944 2.17773 11.914 2.21523 11.8587 2.27952L7.99258 6.88845L4.12651 2.27952C4.07294 2.21523 3.99258 2.17773 3.90687 2.17773H2.48187C2.36044 2.17773 2.29437 2.31881 2.37294 2.41166L7.06044 7.99916L2.37294 13.5867C2.35534 13.6074 2.34405 13.6327 2.3404 13.6596C2.33676 13.6865 2.34092 13.7139 2.35239 13.7386C2.36386 13.7632 2.38216 13.784 2.40511 13.7985C2.42806 13.8131 2.4547 13.8207 2.48187 13.8206H3.90687C3.9908 13.8206 4.07115 13.7831 4.12651 13.7188L7.99258 9.10988L11.8587 13.7188C11.9122 13.7831 11.9926 13.8206 12.0783 13.8206H13.5033C13.6247 13.8206 13.6908 13.6795 13.6122 13.5867L8.92473 7.99916Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+            </div>
+            <ul
+              class="flex xl:flex-row flex-col items-center gap-x-[24px] flex-wrap justify-end gap-y-[12px] xl:gap-y-[8px]"
             >
-          </li>
-          <li class="flex items-center justify-center">
-            <a
-              class="text-[24px] relative leading-[26px] py-[12px] font-normal before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:opacity-0 before:h-[2px] before:bg-[#03E4E1] before:transition-opacity before:duration-300 before:ease-in-out transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] aria-[current=page]:text-[#03E4E1] aria-[current=page]:before:opacity-100"
-              href="/programs"
-              >Программы</a
+              <li class="flex items-center justify-center md:w-auto w-full">
+                <a
+                  class="text-[12px] text-center leading-[13px] md:text-[24px] md:w-auto w-full relative md:leading-[26px] py-[8px] md:py-[12px] font-bold rounded-[4px] md:rounded-[8px] xl:font-normal before:content-none xl:before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:opacity-0 before:h-[2px] before:bg-[#03E4E1] before:transition-opacity before:duration-300 before:ease-in-out transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] aria-[current=page]:text-[#03E4E1] aria-[current=page]:before:opacity-100 xl:aria-[current=page]:bg-transparent aria-[current=page]:bg-[#03E4E1]/25"
+                  aria-current="page"
+                  href="/"
+                  >Главная</a
+                >
+              </li>
+              <li class="flex items-center justify-center md:w-auto w-full">
+                <a
+                  class="text-[12px] text-center leading-[13px] md:text-[24px] md:w-auto w-full relative md:leading-[26px] py-[8px] md:py-[12px] font-bold rounded-[4px] md:rounded-[8px] xl:font-normal before:content-none xl:before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:opacity-0 before:h-[2px] before:bg-[#03E4E1] before:transition-opacity before:duration-300 before:ease-in-out transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] aria-[current=page]:text-[#03E4E1] aria-[current=page]:before:opacity-100 xl:aria-[current=page]:bg-transparent aria-[current=page]:bg-[#03E4E1]/25"
+                  href="/hacktivity"
+                  >Хакактивность</a
+                >
+              </li>
+              <li class="flex items-center justify-center md:w-auto w-full">
+                <a
+                  class="text-[12px] text-center leading-[13px] md:text-[24px] md:w-auto w-full relative md:leading-[26px] py-[8px] md:py-[12px] font-bold rounded-[4px] md:rounded-[8px] xl:font-normal before:content-none xl:before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:opacity-0 before:h-[2px] before:bg-[#03E4E1] before:transition-opacity before:duration-300 before:ease-in-out transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] aria-[current=page]:text-[#03E4E1] aria-[current=page]:before:opacity-100 xl:aria-[current=page]:bg-transparent aria-[current=page]:bg-[#03E4E1]/25"
+                  href="/programs"
+                  >Программы</a
+                >
+              </li>
+              <li class="flex items-center justify-center md:w-auto w-full">
+                <a
+                  class="text-[12px] text-center leading-[13px] md:text-[24px] md:w-auto w-full relative md:leading-[26px] py-[8px] md:py-[12px] font-bold rounded-[4px] md:rounded-[8px] xl:font-normal before:content-none xl:before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:opacity-0 before:h-[2px] before:bg-[#03E4E1] before:transition-opacity before:duration-300 before:ease-in-out transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] aria-[current=page]:text-[#03E4E1] aria-[current=page]:before:opacity-100 xl:aria-[current=page]:bg-transparent aria-[current=page]:bg-[#03E4E1]/25"
+                  href="/reports"
+                  >Отчеты</a
+                >
+              </li>
+              <li class="flex items-center justify-center md:w-auto w-full">
+                <a
+                  class="text-[12px] text-center leading-[13px] md:text-[24px] md:w-auto w-full relative md:leading-[26px] py-[8px] md:py-[12px] font-bold rounded-[4px] md:rounded-[8px] xl:font-normal before:content-none xl:before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:opacity-0 before:h-[2px] before:bg-[#03E4E1] before:transition-opacity before:duration-300 before:ease-in-out transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] aria-[current=page]:text-[#03E4E1] aria-[current=page]:before:opacity-100 xl:aria-[current=page]:bg-transparent aria-[current=page]:bg-[#03E4E1]/25"
+                  href="/moderation"
+                  >Модерация</a
+                >
+              </li>
+            </ul>
+            <div
+              class="mt-[12px] pt-[12px] xl:hidden border-t border-t-[#03E4E1]"
             >
-          </li>
-          <li class="flex items-center justify-center">
-            <a
-              class="text-[24px] relative leading-[26px] py-[12px] font-normal before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:opacity-0 before:h-[2px] before:bg-[#03E4E1] before:transition-opacity before:duration-300 before:ease-in-out transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] aria-[current=page]:text-[#03E4E1] aria-[current=page]:before:opacity-100"
-              href="/reports"
-              >Отчеты</a
-            >
-          </li>
-          <li class="flex items-center justify-center">
-            <a
-              class="text-[24px] relative leading-[26px] py-[12px] font-normal before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:opacity-0 before:h-[2px] before:bg-[#03E4E1] before:transition-opacity before:duration-300 before:ease-in-out transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] aria-[current=page]:text-[#03E4E1] aria-[current=page]:before:opacity-100"
-              href="/moderation"
-              >Модерация</a
-            >
-          </li>
-        </ul>
+              <!-- not auth mobile -->
+              <a
+                class="inline-block w-full text-center py-[8px] md:py-[12px] text-[12px] leading-[13px] md:text-[24px] md:leading-[26px] font-bold text-[#03E4E1]"
+                href="/sign-in"
+                >Войти</a
+              >
+              <!-- not auth mobile -->
+
+              <!-- auth mobile -->
+              <!-- <a
+                class="inline-block w-full text-center py-[8px] md:py-[12px] text-[12px] leading-[13px] md:text-[24px] md:leading-[26px] font-bold text-[#DA4848]"
+                href="/logout"
+                >Выйти</a
+              > -->
+              <!-- auth mobile -->
+            </div>
+          </div>
+        </div>
         <div class="relative group" id="lang-switcher" data-open="false">
           <button
-            class="flex text-[24px] cursor-pointer leading-[26px] font-normal items-center gap-x-[4px] px-[8px] py-[4px] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] group-data-[open=true]:text-[#03E4E1]"
+            class="flex text-[12px] leading-[13px] md:text-[24px] md:leading-[26px] cursor-pointer font-normal items-center gap-x-[4px] px-[8px] py-[4px] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] group-data-[open=true]:text-[#03E4E1]"
             id="lang-switcher-trigger"
             type="button"
           >
             <span>Рус</span>
             <svg
-              class="w-[18px] h-auto group-data-[open=true]:rotate-180 transition-transform ease-in-out duration-300"
+              class="w-[12px] md:w-[18px] h-auto group-data-[open=true]:rotate-180 transition-transform ease-in-out duration-300"
               width="18"
               height="19"
               viewBox="0 0 18 19"
@@ -102,11 +165,57 @@
             </li>
           </ul>
         </div>
+        <!-- not auth -->
         <a
           class="hidden p-[12px] rounded-[8px] text-[24px] transition-colors ease-in-out duration-300 leading-[26px] font-normal xl:inline-block text-[#03E4E1] bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-[#16192B] [@media(hover:hover)]:hover:bg-[#03E4E1] active:text-[#16192B] active:bg-[#03E4E1]"
           href="/sign-in"
           >Войти</a
         >
+        <!-- not auth -->
+
+        <!-- auth -->
+        <!-- <a
+          class="flex items-center gap-x-[8px]"
+          href="/account"
+          aria-label="nickname"
+          title="nickname"
+        >
+          <span class="size-[44px] block rounded-full overflow-hidden">
+            <img
+              class="w-fit h-full object-cover"
+              src="/mock-avatar.png"
+              alt="nickname"
+              width="44"
+              height="44"
+            />
+          </span>
+          <span class="text-[20px] leading-[22px] font-normal">nickname</span>
+        </a> -->
+        <!-- auth -->
+        <button
+          class="flex items-center justify-center xl:hidden size-[24px] cursor-pointer [@media(hover:hover)]:hover:text-[#03E4E1] active:text-[#03E4E1] transition-colors ease-in-out duration-300"
+          id="menu-trigger-open"
+          type="button"
+          aria-label="Open menu"
+          title="Open menu"
+        >
+          <svg
+            class="md:w-[24px] h-auto w-[16px]"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2 3.33301H14M2 7.99967H14M2 12.6663H14"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </nav>
     </div>
   </div>
