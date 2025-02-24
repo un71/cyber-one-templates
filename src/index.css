@@ -176,3 +176,30 @@
   --font-arial: "Arial", sans-serif;
   --font-magistralc: "MagistralC", sans-serif;
 }
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: #16192b;
+}
+
+.marquee-content {
+  will-change: transform;
+  display: flex;
+  flex-wrap: nowrap;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-items {
+  @apply flex flex-nowrap gap-x-[12px] md:gap-x-[72px];
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

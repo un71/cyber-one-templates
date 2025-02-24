@@ -1,10 +1,227 @@
 {% extends "./src/html/layouts/layout.html" %} {% block content %}
 <section>
   <div class="container">
-    <div>
-      <header>
-        <h1>Home</h1>
+    <div class="py-[48px] md:py-[180px]">
+      <header
+        class="relative flex flex-col items-center justify-center text-center before:content-[''] before:top-0 md:before:-top-[168px] before:left-2/4 before:-translate-x-2/4 before:absolute before:size-[415px] md:before:size-[830px] before:rounded-full before:bg-[#03E4E1] before:-z-[1] before:blur-[115px] before:opacity-20"
+      >
+        <h1
+          class="text-[24px] md:text-[64px] leading-[27px] md:leading-[73px] font-bold font-magistralc md:max-w-none max-w-[330px]"
+        >
+          Тестируйте, находите, получайте награды!
+        </h1>
+        <p
+          class="mt-[8px] text-[16px] md:text-[42px] leading-[17px] md:leading-[46px] max-w-[244px] md:max-w-[930px] md:mt-[12px]"
+        >
+          Помогите компаниям защитить свои продукты и заработайте
+        </p>
+        <a
+          class="text-[12px] leading-[13px] md:text-[24px] rounded-[4px] md:rounded-[8px] md:leading-[26px] font-bold text-white py-[8px] bg-[#03E4E1] md:py-[12px] px-[10px] md:px-[24px] mt-[16px] md:mt-[36px] inline-block active:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 transition-colors ease-in-out duration-300 active:text-[#03E4E1] [@media(hover:hover)]:hover:text-[#03E4E1]"
+          href="/sign-in"
+          >Присоединиться</a
+        >
       </header>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div>
+      <h2
+        class="text-[16px] md:text-[36px] leading-normal uppercase font-black text-center"
+      >
+        Для багхантеров
+      </h2>
+      <div
+        class="grid md:grid-cols-2 xl:grid-cols-3 md:mt-[32px] mt-[12px] gap-y-[8px] md:gap-[28px]"
+      >
+        <article
+          class="p-[24px] rounded-[16px] flex flex-col gap-y-[10px] md:gap-y-[12px] shadow-[0px_4px_13.7px_0px_rgba(3,228,225,0.25)]"
+        >
+          <div
+            class="w-full flex items-center md:justify-center md:h-[356px] overflow-hidden"
+          >
+            <img
+              class="md:w-[235px] w-[43px] md:h-auto"
+              src="/for-bughunter-1.png"
+              width="235"
+              height="314"
+              alt="Справедливые награды"
+            />
+          </div>
+          <h3
+            class="uppercase text-[14px] md:text-[24px] leading-[16px] md:leading-[26px] font-bold"
+          >
+            Справедливые награды
+          </h3>
+          <p
+            class="text-[10px] leading-[12px] md:text-[24px] md:leading-[26px]"
+          >
+            Оплата за реальные уязвимости, размер награды зависит от
+            критичности.
+          </p>
+        </article>
+        <article
+          class="p-[24px] rounded-[16px] flex flex-col gap-y-[10px] md:gap-y-[12px] shadow-[0px_4px_13.7px_0px_rgba(3,228,225,0.25)]"
+        >
+          <div
+            class="w-full flex items-center md:justify-center md:h-[356px] overflow-hidden"
+          >
+            <img
+              class="md:w-[235px] w-[43px] md:h-auto"
+              src="/for-bughunter-2.png"
+              width="255"
+              height="326"
+              alt="Рейтинг и карьера"
+            />
+          </div>
+          <h3
+            class="uppercase text-[14px] md:text-[24px] leading-[16px] md:leading-[26px] font-bold"
+          >
+            Рейтинг и карьера
+          </h3>
+          <p
+            class="text-[10px] leading-[12px] md:text-[24px] md:leading-[26px]"
+          >
+            Зарабатывайте рейтинг, становитесь MVP, увеличивайте репутацию
+          </p>
+        </article>
+        <article
+          class="p-[24px] rounded-[16px] flex flex-col gap-y-[10px] md:gap-y-[12px] shadow-[0px_4px_13.7px_0px_rgba(3,228,225,0.25)]"
+        >
+          <div
+            class="w-full flex items-center md:justify-center md:h-[356px] overflow-hidden"
+          >
+            <img
+              class="md:w-[369px] w-[72px] md:h-auto"
+              src="/for-bughunter-3.png"
+              width="369"
+              height="295"
+              alt="Простая подача отчётов"
+            />
+          </div>
+          <h3
+            class="uppercase text-[14px] md:text-[24px] leading-[16px] md:leading-[26px] font-bold"
+          >
+            Простая подача отчётов
+          </h3>
+          <p
+            class="text-[10px] leading-[12px] md:text-[24px] md:leading-[26px]"
+          >
+            Удобная форма, прозрачные условия, оперативная проверка отчетов.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="md:mt-[180px] mt-[48px]">
+  <div class="container">
+    <div>
+      <h2
+        class="text-[16px] md:text-[36px] leading-normal uppercase font-black text-center"
+      >
+        Партнеры
+      </h2>
+      <div class="mt-[12px] md:mt-[32px] marquee">
+        <div class="marquee-content">
+          <ul class="marquee-items">
+            <li class="flex items-center">
+              <img
+                class="min-w-[138px] md:min-w-[318px] h-auto"
+                src="/partner-mock.png"
+                width="318"
+                height="84"
+                alt="Partner"
+              />
+            </li>
+            <li class="flex items-center">
+              <img
+                class="min-w-[138px] md:min-w-[318px] h-auto"
+                src="/partner-mock.png"
+                width="318"
+                height="84"
+                alt="Partner"
+              />
+            </li>
+            <li class="flex items-center">
+              <img
+                class="min-w-[138px] md:min-w-[318px] h-auto"
+                src="/partner-mock.png"
+                width="318"
+                height="84"
+                alt="Partner"
+              />
+            </li>
+            <li class="flex items-center">
+              <img
+                class="min-w-[138px] md:min-w-[318px] h-auto"
+                src="/partner-mock.png"
+                width="318"
+                height="84"
+                alt="Partner"
+              />
+            </li>
+            <li class="flex items-center">
+              <img
+                class="min-w-[138px] md:min-w-[318px] h-auto"
+                src="/partner-mock.png"
+                width="318"
+                height="84"
+                alt="Partner"
+              />
+            </li>
+          </ul>
+          <!-- Дублируем контент для бесконечной прокрутки -->
+          <ul class="marquee-items">
+            <li class="flex items-center">
+              <img
+                class="min-w-[138px] md:min-w-[318px] h-auto"
+                src="/partner-mock.png"
+                width="318"
+                height="84"
+                alt="Partner"
+              />
+            </li>
+            <li class="flex items-center">
+              <img
+                class="min-w-[138px] md:min-w-[318px] h-auto"
+                src="/partner-mock.png"
+                width="318"
+                height="84"
+                alt="Partner"
+              />
+            </li>
+            <li class="flex items-center">
+              <img
+                class="min-w-[138px] md:min-w-[318px] h-auto"
+                src="/partner-mock.png"
+                width="318"
+                height="84"
+                alt="Partner"
+              />
+            </li>
+            <li class="flex items-center">
+              <img
+                class="min-w-[138px] md:min-w-[318px] h-auto"
+                src="/partner-mock.png"
+                width="318"
+                height="84"
+                alt="Partner"
+              />
+            </li>
+            <li class="flex items-center">
+              <img
+                class="min-w-[138px] md:min-w-[318px] h-auto"
+                src="/partner-mock.png"
+                width="318"
+                height="84"
+                alt="Partner"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
