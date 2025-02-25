@@ -1,0 +1,195 @@
+{% extends "./src/html/layouts/layout.html" %} {% block content %}
+<section>
+  <div class="container">
+    <div class="pt-[48px] max-w-[1200px]">
+      <header>
+        <a
+          class="md:text-[24px] md:leading-[26px] text-[12px] leading-[14px] flex items-center gap-x-[10px] text-[#03E4E1] [@media(hover:hover)]:hover:opacity-60 active:opacity-60 transition-opacity ease-in-out duration-300"
+          href="/programs"
+        >
+          <svg
+            class="w-[12px] md:w-[24px] h-auto"
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.6423 11.8772H5.96999L15.3503 3.73438C15.5003 3.60313 15.4093 3.35938 15.2111 3.35938H12.8405C12.7361 3.35938 12.6369 3.39687 12.5593 3.46384L2.43695 12.2469C2.34424 12.3272 2.26989 12.4266 2.21893 12.5382C2.16797 12.6498 2.1416 12.7711 2.1416 12.8938C2.1416 13.0164 2.16797 13.1377 2.21893 13.2493C2.26989 13.3609 2.34424 13.4603 2.43695 13.5406L12.6182 22.3772C12.6584 22.4121 12.7066 22.4308 12.7575 22.4308H15.2084C15.4066 22.4308 15.4977 22.1844 15.3477 22.0558L5.96999 13.9129H21.6423C21.7602 13.9129 21.8566 13.8165 21.8566 13.6987V12.0915C21.8566 11.9737 21.7602 11.8772 21.6423 11.8772Z"
+              fill="currentColor"
+            />
+          </svg>
+          <span>Назад</span>
+        </a>
+        <div class="flex items-center justify-between mt-[12px]">
+          <h1
+            class="text-[16px] md:text-[36px] uppercase leading-[18px] md:leading-[51px] font-black"
+          >
+            отправление отчета
+          </h1>
+
+          <a
+            class="flex items-center gap-[10px] text-[#DA4848] transition-opacity ease-in-out text-[12px] leading-[14px] duration-300 p-[8px] md:p-[12px] md:rounded-[8px] rounded-[4px] border border-[#DA4848] md:text-[24px] md:leading-[26px] text-center active:opacity-60 [@media(hover:hover)]:hover:opacity-60"
+            href="/add-report"
+          >
+            <svg
+              class="w-[12px] md:w-[24px] h-auto"
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.25 6.73828H17.25V4.86328C17.25 4.03594 16.5773 3.36328 15.75 3.36328H8.25C7.42266 3.36328 6.75 4.03594 6.75 4.86328V6.73828H3.75C3.33516 6.73828 3 7.07344 3 7.48828V8.23828C3 8.34141 3.08437 8.42578 3.1875 8.42578H4.60312L5.18203 20.6836C5.21953 21.4828 5.88047 22.1133 6.67969 22.1133H17.3203C18.1219 22.1133 18.7805 21.4852 18.818 20.6836L19.3969 8.42578H20.8125C20.9156 8.42578 21 8.34141 21 8.23828V7.48828C21 7.07344 20.6648 6.73828 20.25 6.73828ZM15.5625 6.73828H8.4375V5.05078H15.5625V6.73828Z"
+                fill="#DA4848"
+              />
+            </svg>
+            <span>Удалить</span>
+          </a>
+        </div>
+        <div
+          class="mt-[16px] md:mt-[24px] flex flex-col gap-y-[4px] md:gap-y-[12px]"
+        >
+          <p
+            class="text-[14px] leading-[16px] md:text-[28px] md:leading-[30px]"
+          >
+            Статус отчета
+          </p>
+          <div class="flex items-center flex-wrap gap-[4px]">
+            <span
+              class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E4A003]/45 text-[#EBD005]"
+              >Отправлен</span
+            >
+            <span
+              class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E44303]/45 text-[#E44303]"
+              >Отклонен</span
+            >
+            <span
+              class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#C8CFCB]/45 text-[#DBDBDB]"
+              >Черновик</span
+            >
+          </div>
+        </div>
+        <form class="mt-[16px] md:mt-[24px]">
+          <div class="flex flex-col gap-y-[12px] md:gap-y-[24px]">
+            <div class="flex flex-col gap-y-[4px] md:gap-y-[12px]">
+              <label
+                class="text-[12px] leading-[14px] md:text-[28px] md:leading-[30px]"
+                for="name"
+                >Наименование отчета:</label
+              >
+              <input
+                class="text-[12px] leading-[14px] placeholder:text-[12px] placeholder:leading-[14px] inline-block rounded-[4px] md:rounded-[8px] text-[#DCDDDE] border border-[#DCDDDE] md:text-[20px] font-normal md:leading-[22px] w-full px-[10px] py-[8px] md:px-[10px] md:py-[12px] placeholder:text-[#777A87] bg-transparent placeholder:md:text-[20px] placeholder:md:leading-[22px] data-[is-error=true]:border-[#DA4848] transition-colors ease-in-out duration-300"
+                id="name"
+                type="text"
+                name="name"
+                required
+                placeholder="Program"
+                data-is-error="true"
+              />
+              <p
+                class="md:text-[20px] md:leading-[22px] text-[12px] leading-[14px] text-[#DA4848]"
+              >
+                Пропишите буквы
+              </p>
+            </div>
+            <div class="flex flex-col gap-y-[4px] md:gap-y-[12px]">
+              <label
+                class="text-[12px] leading-[14px] md:text-[28px] md:leading-[30px]"
+                for="name"
+                >Тип отчета:</label
+              >
+              <select
+                class="text-[12px] leading-[14px] placeholder:text-[12px] placeholder:leading-[14px] inline-block rounded-[4px] md:rounded-[8px] text-[#DCDDDE] border border-[#DCDDDE] md:text-[20px] font-normal md:leading-[22px] w-full px-[10px] py-[8px] md:px-[10px] md:py-[12px] placeholder:text-[#777A87] bg-transparent placeholder:md:text-[20px] placeholder:md:leading-[22px] data-[is-error=true]:border-[#DA4848] transition-colors ease-in-out duration-300"
+                id="name"
+                type="text"
+                name="name"
+                required
+                placeholder="ex: Program"
+                data-is-error="false"
+              >
+                <option value="1">Публичный</option>
+                <option value="1">Публичный</option>
+                <option value="1">Публичный</option>
+              </select>
+            </div>
+            <div class="flex flex-col gap-y-[4px] md:gap-y-[12px]">
+              <label
+                class="text-[12px] leading-[14px] md:text-[28px] md:leading-[30px]"
+                for="name"
+                >Описание</label
+              >
+              <div class="text-white" id="report-desc"></div>
+            </div>
+            <div class="flex flex-col gap-y-[4px] md:gap-y-[12px]">
+              <label
+                class="text-[12px] leading-[14px] md:text-[28px] md:leading-[30px]"
+                for="name"
+                >Степень влияния:</label
+              >
+              <div class="text-white" id="report-influence"></div>
+            </div>
+            <div class="flex flex-col gap-y-[4px] md:gap-y-[12px]">
+              <p
+                class="text-[12px] leading-[14px] md:text-[28px] md:leading-[30px]"
+              >
+                Дополнительные файлы:
+              </p>
+              <label for="files">
+                <span
+                  class="cursor-pointer flex items-center gap-[12px] text-[#03E4E1] transition-opacity ease-in-out duration-300 [@media(hover:hover)]:hover:opacity-60 active:opacity-60"
+                >
+                  <svg
+                    class="md:w-[32px] h-auto"
+                    width="32"
+                    height="33"
+                    viewBox="0 0 32 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.6667 22.0723V11.2056L11.2 14.6723L9.33334 12.7389L16 6.07227L22.6667 12.7389L20.8 14.6723L17.3333 11.2056V22.0723H14.6667ZM8.00001 27.4056C7.26668 27.4056 6.63912 27.1447 6.11734 26.6229C5.59557 26.1012 5.33423 25.4732 5.33334 24.7389V20.7389H8.00001V24.7389H24V20.7389H26.6667V24.7389C26.6667 25.4723 26.4058 26.1003 25.884 26.6229C25.3622 27.1456 24.7342 27.4065 24 27.4056H8.00001Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <span class="md:text-[24px] md:leading-[24px]"
+                    >Прикрепить файл</span
+                  >
+                </span>
+                <input class="sr-only" id="files" type="file" name="files" />
+              </label>
+              <div class="flex flex-col gap-[8px] items-start">
+                <a class="flex items-center gap-x-[12px]" href="#file">
+                  <img
+                    class="md:w-[32px] h-auto"
+                    src="/file-pdf.svg"
+                    width="32"
+                    height="32"
+                    alt="file"
+                  />
+                  <span>правила.pdf</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-[8px]">
+            <button
+              class="inline-block md:mt-[42px] mt-[24px] md:w-min w-full text-white transition-opacity ease-in-out text-[12px] leading-[14px] duration-300 p-[8px] md:p-[12px] md:rounded-[8px] rounded-[4px] bg-[#03E4E1] md:text-[24px] md:leading-[26px] text-center active:opacity-60 [@media(hover:hover)]:hover:opacity-60"
+              type="submit"
+            >
+              Отправить
+            </button>
+            <button
+              class="inline-block md:mt-[42px] mt-[24px] md:w-min w-full text-[#03E4E1] transition-opacity ease-in-out text-[12px] leading-[14px] duration-300 p-[8px] md:p-[12px] md:rounded-[8px] rounded-[4px] bg-[#03E4E1]/25 md:text-[24px] md:leading-[26px] text-center active:opacity-60 [@media(hover:hover)]:hover:opacity-60"
+            >
+              Сохранить
+            </button>
+          </div>
+        </form>
+      </header>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -2,11 +2,25 @@
 // @ts-ignore
 import Editor from "@toast-ui/editor";
 
-const editor = new Editor({
-  el: document.querySelector("#rules-program"),
-  height: "237px",
-  initialEditType: "markdown",
-  previewStyle: "vertical",
-});
+// Функция для инициализации редактора (если элемент существует)
+const initEditor = (selector: string) => {
+  const el = document.querySelector(selector);
+  if (!el) return; // Если элемент не найден, просто выходим
 
-editor.getMarkdown();
+  return new Editor({
+    el: el,
+    height: "237px",
+    initialEditType: "markdown",
+    previewStyle: "vertical",
+  });
+};
+
+// Инициализируем редакторы
+const rulesProgramEditor = initEditor("#rules-program");
+const reportDesc = initEditor("#report-desc");
+const reportInfluence = initEditor("#report-influence");
+
+// Получаем Markdown (если редактор инициализирован)
+if (rulesProgramEditor) rulesProgramEditor.getMarkdown();
+if (reportDesc) reportDesc.getMarkdown();
+if (reportInfluence) reportInfluence.getMarkdown();
