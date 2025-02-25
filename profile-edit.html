@@ -1,0 +1,226 @@
+{% extends "./src/html/layouts/layout.html" %} {% block content %}
+<section class="mt-[46px]">
+  <div class="container lg:max-w-[890px]">
+    <div class="md:bg-[#25293F] rounded-[16px] md:p-[24px]">
+      <div class="flex items-center justify-between">
+        <h1
+          class="font-black md:capitalize uppercase text-[16px] leading-[18px] md:font-bold md:text-[28px] md:leading-[30px]"
+        >
+          Профиль
+        </h1>
+      </div>
+      <div
+        class="mt-[12px] md:mt-[24px] gap-x-[24px] grid md:gap-x-[18px] grid-cols-[80px_1fr] md:grid-cols-[150px_1fr]"
+      >
+        <div
+          class="flex flex-col items-center justify-center gap-y-[4px] md:gap-y-[8px]"
+        >
+          <div
+            class="overflow-hidden rounded-full size-[80px] md:size-[150px] bg-[#DCDDDE]"
+          >
+            <img
+              class="size-full object-cover"
+              src="/mock-avatar.png"
+              width="150"
+              height="150"
+              alt="avatar"
+            />
+          </div>
+          <label
+            class="text-[#03E4E1] text-center text-[12px] leading-[14px] md:text-[16px] md:leading-[18px] [@media(hover:hover)]:hover:opacity-60 cursor-pointer active:opacity-60 transition-opacity ease-in-out duration-300"
+            for="upload-avatar"
+          >
+            <input
+              class="sr-only"
+              id="upload-avatar"
+              type="file"
+              href="#edit"
+            />
+            <span>Выбрать фото</span>
+          </label>
+        </div>
+        <div
+          class="md:pt-[38px] grid md:grid-cols-2 gap-x-[12px] gap-y-[12px] md:gap-y-[24px]"
+        >
+          <input
+            class="text-[12px] max-w-[540px] leading-[14px] placeholder:text-[12px] placeholder:leading-[14px] inline-block rounded-[4px] md:rounded-[8px] text-[#DCDDDE] border border-[#DCDDDE] md:text-[20px] font-normal md:leading-[22px] w-full px-[12px] py-[8px] md:px-[24px] md:py-[12px] placeholder:text-[#777A87] bg-transparent placeholder:md:text-[20px] placeholder:md:leading-[22px] data-[is-error=true]:border-[#DA4848] transition-colors ease-in-out duration-300"
+            type="text"
+            required
+            placeholder="Введите никнейм"
+            data-is-error="false"
+          />
+          <input
+            class="md:col-start-1 text-[12px] max-w-[540px] leading-[14px] placeholder:text-[12px] placeholder:leading-[14px] inline-block rounded-[4px] md:rounded-[8px] text-[#DCDDDE] border border-[#DCDDDE] md:text-[20px] font-normal md:leading-[22px] w-full px-[12px] py-[8px] md:px-[24px] md:py-[12px] placeholder:text-[#777A87] bg-transparent placeholder:md:text-[20px] placeholder:md:leading-[22px] data-[is-error=true]:border-[#DA4848] transition-colors ease-in-out duration-300"
+            type="text"
+            required
+            placeholder="Введите ФИО"
+            data-is-error="false"
+          />
+          <input
+            class="text-[12px] max-w-[540px] leading-[14px] placeholder:text-[12px] placeholder:leading-[14px] inline-block rounded-[4px] md:rounded-[8px] text-[#DCDDDE] border border-[#DCDDDE] md:text-[20px] font-normal md:leading-[22px] w-full px-[12px] py-[8px] md:px-[24px] md:py-[12px] placeholder:text-[#777A87] bg-transparent placeholder:md:text-[20px] placeholder:md:leading-[22px] data-[is-error=true]:border-[#DA4848] transition-colors ease-in-out duration-300"
+            type="email"
+            inputmode="email"
+            required
+            placeholder="Email"
+            data-is-error="false"
+          />
+        </div>
+      </div>
+      <div class="mt-[24px] md:mt-[36px]">
+        <h2
+          class="font-black md:capitalize uppercase text-[16px] leading-[18px] md:font-bold md:text-[28px] md:leading-[30px]"
+        >
+          Аналитика
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[12px] md:mt-[24px] mt-[12px]"
+        >
+          <div
+            class="md:bg-[#16192B] h-full flex flex-col gap-y-[13px] bg-[#25293F] p-[12px] md:rounded-[8px] rounded-[4px]"
+          >
+            <img
+              class="w-[20px] md:w-[36px] h-auto"
+              src="/profile-rating.svg"
+              width="36"
+              height="36"
+              alt="rating"
+            />
+            <p
+              class="text-[14px] leading-[16px] md:text-[18px] md:leading-[20px]"
+            >
+              Рейтинг
+            </p>
+            <p
+              class="font-bold mt-auto text-[#03E4E1] text-[18px] leading-[20px] md:text-[28px] md:leading-[30px]"
+            >
+              10
+            </p>
+          </div>
+          <div
+            class="md:bg-[#16192B] h-full flex flex-col gap-y-[13px] bg-[#25293F] p-[12px] md:rounded-[8px] rounded-[4px]"
+          >
+            <img
+              class="w-[20px] md:w-[36px] h-auto"
+              src="/profile-uyaz.svg"
+              width="36"
+              height="36"
+              alt="rating"
+            />
+            <p
+              class="text-[14px] leading-[16px] md:text-[18px] md:leading-[20px]"
+            >
+              Подтвержденные уязвимости
+            </p>
+            <p
+              class="font-bold mt-auto text-[#03E4E1] text-[18px] leading-[20px] md:text-[28px] md:leading-[30px]"
+            >
+              1
+            </p>
+          </div>
+          <div
+            class="md:bg-[#16192B] flex h-full flex-col gap-y-[13px] bg-[#25293F] p-[12px] md:rounded-[8px] rounded-[4px]"
+          >
+            <img
+              class="w-[20px] md:w-[36px] h-auto"
+              src="/profile-dollar.svg"
+              width="36"
+              height="36"
+              alt="rating"
+            />
+            <p
+              class="text-[14px] leading-[16px] md:text-[18px] md:leading-[20px]"
+            >
+              Всего выплат
+            </p>
+            <p
+              class="font-bold mt-auto text-[#03E4E1] text-[18px] leading-[20px] md:text-[28px] md:leading-[30px]"
+            >
+              5000$
+            </p>
+          </div>
+        </div>
+      </div>
+      <form class="mt-[24px] md:mt-[36px]">
+        <h2
+          class="font-black md:normal-case uppercase text-[16px] leading-[18px] md:font-bold md:text-[28px] md:leading-[30px]"
+        >
+          Настройка безопасности
+        </h2>
+        <div class="md:mt-[24px] mt-[12px]">
+          <input
+            class="text-[12px] max-w-[540px] leading-[14px] placeholder:text-[12px] placeholder:leading-[14px] inline-block rounded-[4px] md:rounded-[8px] text-[#DCDDDE] border border-[#DCDDDE] md:text-[20px] font-normal md:leading-[22px] w-full px-[12px] py-[8px] md:px-[24px] md:py-[12px] placeholder:text-[#777A87] bg-transparent placeholder:md:text-[20px] placeholder:md:leading-[22px] data-[is-error=true]:border-[#DA4848] transition-colors ease-in-out duration-300"
+            type="text"
+            required
+            placeholder="Введите старый пароль"
+            data-is-error="false"
+          />
+          <input
+            class="mt-[12px] max-w-[540px] text-[12px] leading-[14px] placeholder:text-[12px] placeholder:leading-[14px] inline-block rounded-[4px] md:rounded-[8px] text-[#DCDDDE] border border-[#DCDDDE] md:text-[20px] font-normal md:leading-[22px] w-full px-[12px] py-[8px] md:px-[24px] md:py-[12px] placeholder:text-[#777A87] bg-transparent placeholder:md:text-[20px] placeholder:md:leading-[22px] data-[is-error=true]:border-[#DA4848] transition-colors ease-in-out duration-300"
+            type="text"
+            required
+            placeholder="Введите обновленный пароль"
+            data-is-error="false"
+          />
+        </div>
+        <button
+          class="text-[12px] leading-[14px] md:text-[24px] md:leading-[26px] w-full mt-[24px] md:mt-[32px] text-center bg-[#03E4E1] text-white p-[8px] md:p-[12px] rounded-[4px] md:rounded-[8px] cursor-pointer [@media(hover:hover)]:hover:opacity-60 active:opacity-60 transition-opacity ease-in-out duration-300"
+          type="submit"
+        >
+          Сохранить
+        </button>
+        <button
+          class="text-[12px] leading-[14px] mt-[4px] md:text-[24px] md:leading-[26px] w-full text-center text-[#DA4848] p-[8px] md:p-[12px] rounded-[4px] md:rounded-[8px] cursor-pointer [@media(hover:hover)]:hover:opacity-60 active:opacity-60 transition-opacity ease-in-out duration-300"
+          type="button"
+          data-modal-open="logout"
+        >
+          Выйти
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+<div
+  class="fixed inset-0 bg-black/50 items-center justify-center z-50 data-[open=false]:hidden data-[open=true]:flex"
+  data-modal="logout"
+  data-open="false"
+>
+  <div
+    class="bg-[#25293F] rounded-[16px] p-[24px] shadow-lg w-[90%] max-w-[726px]"
+  >
+    <div class="flex items-start justify-between gap-x-[8px]">
+      <p
+        class="font-bold text-[14px] leading-[16px] md:text-[28px] md:leading-[30px] mb-[24px] md:mb-[48px]"
+      >
+        Вы уверены, что хотите выйти из своего аккаунта?
+      </p>
+      <button class="cursor-pointer" data-modal-close>
+        <svg
+          width="24"
+          height="25"
+          viewBox="0 0 24 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13.3871 12.4997L20.4183 4.11847C20.5362 3.97919 20.4371 3.76758 20.2549 3.76758H18.1174C17.9916 3.76758 17.871 3.82383 17.788 3.92026L11.9889 10.8336L6.18977 3.92026C6.10941 3.82383 5.98887 3.76758 5.8603 3.76758H3.7228C3.54066 3.76758 3.44155 3.97919 3.55941 4.11847L10.5907 12.4997L3.55941 20.881C3.53301 20.912 3.51607 20.95 3.51061 20.9904C3.50514 21.0308 3.51138 21.0719 3.52859 21.1088C3.54579 21.1458 3.57323 21.177 3.60766 21.1988C3.64209 21.2206 3.68205 21.2321 3.7228 21.2319H5.8603C5.98619 21.2319 6.10673 21.1756 6.18977 21.0792L11.9889 14.1658L17.788 21.0792C17.8683 21.1756 17.9889 21.2319 18.1174 21.2319H20.2549C20.4371 21.2319 20.5362 21.0203 20.4183 20.881L13.3871 12.4997Z"
+            fill="#00BACF"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="grid grid-cols-2 gap-[8px]">
+      <button
+        class="text-[12px] leading-[14px] md:text-[18px] md:leading-[20px] p-[8px] cursor-pointer text-[#DA4848] border bg-transparent boder border-[#DA4848] rounded-[8px]"
+      >
+        Выйти
+      </button>
+      <button
+        class="text-[12px] leading-[14px] md:text-[18px] md:leading-[20px] p-[8px] cursor-pointer text-white bg-[#03E4E1] border border-[#03E4E1] rounded-[8px]"
+        data-modal-logout
+      >
+        Остаться
+      </button>
+    </div>
+  </div>
+</div>
+{% endblock %}

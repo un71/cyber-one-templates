@@ -1,5 +1,6 @@
 import "./index.css";
 import "./menu";
+import "./modal";
 import "./password";
 
 document.addEventListener("DOMContentLoaded", () => {
