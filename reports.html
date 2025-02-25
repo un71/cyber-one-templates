@@ -2,17 +2,73 @@
 <section>
   <div class="container">
     <div class="pt-[48px]">
-      <header>
+      <header class="flex flex-col gap-y-[8px] md:gap-y-[12px]">
+        <div class="hidden md:flex flex-col gap-y-[8px] md:gap-y-[12px]">
+          <div
+            class="text-[#DAAB48] bg-[#DAAB48]/45 p-[10px] md:rounded-[8px] rounded-[4px] md:text-[18px] md:leading-[20px] text-[12px] leading-[14px]"
+          >
+            Пожалуйста, войдите в систему, чтобы отправить отчет.
+          </div>
+          <div
+            class="text-[#05EB7D] bg-[#03E477]/45 p-[10px] md:rounded-[8px] rounded-[4px] md:text-[18px] md:leading-[20px] text-[12px] leading-[14px]"
+          >
+            Программа успешна создана
+          </div>
+        </div>
         <h1
           class="text-[16px] md:text-[36px] uppercase leading-[18px] md:leading-[51px] font-black"
         >
-          Список отчетов
+          Последние активности
         </h1>
       </header>
     </div>
-    <div class="md:mt-[24px] mt-[12px]">
+  </div>
+</section>
+<section class="md:mt-[48px] mt-[24px]">
+  <div class="container">
+    <div>
+      <div
+        class="flex lg:flex-row flex-col items-center justify-between gap-[12px]"
+      >
+        <div
+          class="text-[10px] flex items-center gap-x-[12px] leading-[12px] md:text-[18px] md:leading-[20px] md:order-1 order-3"
+        >
+          <p>Кол-во отчётов: 85</p>
+          <p>Публичный: 70</p>
+          <p>Приватный: 15</p>
+        </div>
+        <div
+          class="grid grid-cols-2 md:flex items-center md:order-2 order-1 overflow-hidden border border-[#03E4E1] rounded-[8px]"
+        >
+          <a
+            class="text-[12px] leading-[14px] md:text-[24px] md:leading-[26px] inline-block py-[8px] px-[16px] md:px-[12px] md:py-[10px] text-[#03E4E1] [@media(hover:hover)]:hover:bg-[#03E4E1]/25 transition-colors ease-in-out duration-300 active:bg-[#03E4E1]/25 aria-[selected=true]:bg-[#03E4E1]/25"
+            aria-selected="true"
+            href="#filter"
+            >Все отчеты</a
+          >
+          <a
+            class="text-[12px] border-l border-l-[#03E4E1] leading-[14px] md:text-[24px] md:leading-[26px] inline-block py-[8px] px-[16px] md:px-[12px] md:py-[10px] text-[#03E4E1] [@media(hover:hover)]:hover:bg-[#03E4E1]/25 transition-colors ease-in-out duration-300 active:bg-[#03E4E1]/25 aria-[selected=true]:bg-[#03E4E1]/25"
+            href="#filter"
+            >Мои отчеты</a
+          >
+        </div>
+        <div
+          class="flex w-full order-2 md:hidden flex-col gap-y-[8px] md:gap-y-[12px]"
+        >
+          <div
+            class="text-[#DAAB48] bg-[#DAAB48]/45 p-[10px] md:rounded-[8px] rounded-[4px] md:text-[18px] md:leading-[20px] text-[12px] leading-[14px]"
+          >
+            Пожалуйста, войдите в систему, чтобы отправить отчет.
+          </div>
+          <div
+            class="text-[#05EB7D] bg-[#03E477]/45 p-[10px] md:rounded-[8px] rounded-[4px] md:text-[18px] md:leading-[20px] text-[12px] leading-[14px]"
+          >
+            Программа успешна создана
+          </div>
+        </div>
+      </div>
       <div>
-        <div>
+        <div class="mt-[12px] md:mt-[24px]">
           <!-- DESKTOP TABLE START -->
           <div class="overflow-x-auto lg:block hidden">
             <table class="w-full table-fixed border-collapse">
@@ -20,11 +76,6 @@
                 <tr
                   class="[&>th:first-child]:rounded-tl-[12px] [&>th:last-child]:rounded-tr-[12px]"
                 >
-                  <th
-                    class="text-start text-[16px] bg-[#DCDDDE] leading-[18px] font-normal py-[12px] px-[24px] text-[#16192B]"
-                  >
-                    Программа
-                  </th>
                   <th
                     class="text-start text-[16px] bg-[#DCDDDE] leading-[18px] font-normal py-[12px] px-[24px] text-[#16192B]"
                   >
@@ -38,12 +89,12 @@
                   <th
                     class="text-start text-[16px] bg-[#DCDDDE] leading-[18px] font-normal py-[12px] px-[24px] text-[#16192B]"
                   >
-                    Дата отправления
+                    Программа
                   </th>
                   <th
                     class="text-start text-[16px] bg-[#DCDDDE] leading-[18px] font-normal py-[12px] px-[24px] text-[#16192B]"
                   >
-                    Серьезность
+                    Тип отчета
                   </th>
                   <th
                     class="text-start text-[16px] bg-[#DCDDDE] leading-[18px] font-normal py-[12px] px-[24px] text-[#16192B]"
@@ -60,12 +111,7 @@
                   <td
                     class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
                   >
-                    Program 1
-                  </td>
-                  <td
-                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
-                  >
-                    Program 1
+                    1
                   </td>
                   <td
                     class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
@@ -88,12 +134,174 @@
                   <td
                     class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
                   >
-                    12.02.2024 14:32
+                    10
                   </td>
                   <td
                     class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
                   >
-                    Высокий
+                    10
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    <!-- <span
+                      class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#03E477]/45 text-[#05EB7D]"
+                      >Одобрен</span
+                    > -->
+                    <!-- <span
+                      class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E4A003]/45 text-[#EBD005]"
+                      >Отправлен</span
+                    > -->
+                    <span
+                      class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E44303]/45 text-[#E44303]"
+                      >Отклонен</span
+                    >
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    <div class="flex justify-end">
+                      <a
+                        class="inline-block [@media(hover:hover)]:hover:opacity-60 active:opacity-60 transition-opacity ease-in-out duration-300 text-[#03E4E1]"
+                        href="/#program-article"
+                        >Подробнее</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    2
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    <div class="flex items-center gap-x-[8px]">
+                      <div
+                        class="size-[44px] overflow-hidden bg-[#D9D9D9] rounded-full"
+                      ></div>
+                      <span>nickname</span>
+                    </div>
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    10
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    10
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    <!-- <span
+                      class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#03E477]/45 text-[#05EB7D]"
+                      >Одобрен</span
+                    > -->
+                    <!-- <span
+                      class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E4A003]/45 text-[#EBD005]"
+                      >Отправлен</span
+                    > -->
+                    <span
+                      class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E44303]/45 text-[#E44303]"
+                      >Отклонен</span
+                    >
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    <div class="flex justify-end">
+                      <a
+                        class="inline-block [@media(hover:hover)]:hover:opacity-60 active:opacity-60 transition-opacity ease-in-out duration-300 text-[#03E4E1]"
+                        href="/#program-article"
+                        >Подробнее</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    2
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    <div class="flex items-center gap-x-[8px]">
+                      <div
+                        class="size-[44px] overflow-hidden bg-[#D9D9D9] rounded-full"
+                      ></div>
+                      <span>nickname</span>
+                    </div>
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    10
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    10
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    <!-- <span
+                      class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#03E477]/45 text-[#05EB7D]"
+                      >Одобрен</span
+                    > -->
+                    <span
+                      class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E4A003]/45 text-[#EBD005]"
+                      >Отправлен</span
+                    >
+                    <!-- <span
+              class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E44303]/45 text-[#E44303]"
+              >Отклонен</span
+            > -->
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    <div class="flex justify-end">
+                      <a
+                        class="inline-block [@media(hover:hover)]:hover:opacity-60 active:opacity-60 transition-opacity ease-in-out duration-300 text-[#03E4E1]"
+                        href="/#program-article"
+                        >Подробнее</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    4
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    <div class="flex items-center gap-x-[8px]">
+                      <div
+                        class="size-[44px] overflow-hidden bg-[#D9D9D9] rounded-full"
+                      ></div>
+                      <span>nickname</span>
+                    </div>
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    10
+                  </td>
+                  <td
+                    class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                  >
+                    10
                   </td>
                   <td
                     class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
@@ -103,13 +311,13 @@
                       >Одобрен</span
                     >
                     <!-- <span
-                      class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E4A003]/45 text-[#EBD005]"
-                      >В ожидании</span
-                    > -->
+                  class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E4A003]/45 text-[#EBD005]"
+                  >Отправлен</span
+                > -->
                     <!-- <span
-                      class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E44303]/45 text-[#E44303]"
-                      >Отклонен</span
-                    > -->
+                  class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E44303]/45 text-[#E44303]"
+                  >Отклонен</span
+                > -->
                   </td>
                   <td
                     class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
@@ -117,7 +325,7 @@
                     <div class="flex justify-end">
                       <a
                         class="inline-block [@media(hover:hover)]:hover:opacity-60 active:opacity-60 transition-opacity ease-in-out duration-300 text-[#03E4E1]"
-                        href="/article"
+                        href="/#program-article"
                         >Подробнее</a
                       >
                     </div>
@@ -134,11 +342,11 @@
               <div class="py-[8px] px-[12px]">
                 <span
                   class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#03E477]/45 text-[#05EB7D]"
-                  >Одобрен</span
+                  >Принят</span
                 >
                 <!-- <span
                 class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E4A003]/45 text-[#EBD005]"
-                >В ожидании</span
+                >Отправлен</span
               > -->
                 <!-- <span
                 class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E44303]/45 text-[#E44303]"
@@ -168,8 +376,7 @@
                 <div
                   class="flex items-center gap-[8px] mt-[8px] flex-wrap text-[10px] leading-[12px] text-[#777A87]"
                 >
-                  <p>Дата отправления: 12.02.2024 14:32</p>
-                  <p>Серьезность: высокий</p>
+                  <p>Тип отчета: Публичный</p>
                 </div>
               </div>
             </a>

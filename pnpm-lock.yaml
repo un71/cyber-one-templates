@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@toast-ui/editor':
+        specifier: ^3.2.2
+        version: 3.2.2
     devDependencies:
       '@eslint/js':
         specifier: ^9.21.0
@@ -14,6 +18,9 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.0.8
         version: 4.0.8(vite@5.4.14(lightningcss@1.29.1))
+      editor:
+        specifier: link:@types/@toast-ui/editor
+        version: link:@types/@toast-ui/editor
       eslint:
         specifier: ^9.21.0
         version: 9.21.0(jiti@2.4.2)
@@ -486,6 +493,9 @@ packages:
     peerDependencies:
       vite: ^5.2.0 || ^6
 
+  '@toast-ui/editor@3.2.2':
+    resolution: {integrity: sha512-ASX7LFjN2ZYQJrwmkUajPs7DRr9FsM1+RQ82CfTO0Y5ZXorBk1VZS4C2Dpxinx9kl55V4F8/A2h2QF4QMDtRbA==}
+
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
@@ -676,6 +686,9 @@ packages:
   dir-glob@3.0.1:
     resolution: {integrity: sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==}
     engines: {node: '>=8'}
+
+  dompurify@2.5.8:
+    resolution: {integrity: sha512-o1vSNgrmYMQObbSSvF/1brBYEQPHhV1+gsmrusO7/GXtp1T9rCS8cXFqVxK/9crT1jA6Ccv+5MTSjBNqr7Sovw==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -1093,6 +1106,9 @@ packages:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
     engines: {node: '>= 0.8.0'}
 
+  orderedmap@2.1.1:
+    resolution: {integrity: sha512-TvAWxi0nDe1j/rtMcWcIj94+Ffe6n7zhow33h40SKxmsmozs6dz/e+EajymfoFcHd7sxNn8yHM8839uixMOV6g==}
+
   p-limit@3.1.0:
     resolution: {integrity: sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==}
     engines: {node: '>=10'}
@@ -1227,6 +1243,30 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
+  prosemirror-commands@1.7.0:
+    resolution: {integrity: sha512-6toodS4R/Aah5pdsrIwnTYPEjW70SlO5a66oo5Kk+CIrgJz3ukOoS+FYDGqvQlAX5PxoGWDX1oD++tn5X3pyRA==}
+
+  prosemirror-history@1.4.1:
+    resolution: {integrity: sha512-2JZD8z2JviJrboD9cPuX/Sv/1ChFng+xh2tChQ2X4bB2HeK+rra/bmJ3xGntCcjhOqIzSDG6Id7e8RJ9QPXLEQ==}
+
+  prosemirror-inputrules@1.4.0:
+    resolution: {integrity: sha512-6ygpPRuTJ2lcOXs9JkefieMst63wVJBgHZGl5QOytN7oSZs3Co/BYbc3Yx9zm9H37Bxw8kVzCnDsihsVsL4yEg==}
+
+  prosemirror-keymap@1.2.2:
+    resolution: {integrity: sha512-EAlXoksqC6Vbocqc0GtzCruZEzYgrn+iiGnNjsJsH4mrnIGex4qbLdWWNza3AW5W36ZRrlBID0eM6bdKH4OStQ==}
+
+  prosemirror-model@1.24.1:
+    resolution: {integrity: sha512-YM053N+vTThzlWJ/AtPtF1j0ebO36nvbmDy4U7qA2XQB8JVaQp1FmB9Jhrps8s+z+uxhhVTny4m20ptUvhk0Mg==}
+
+  prosemirror-state@1.4.3:
+    resolution: {integrity: sha512-goFKORVbvPuAQaXhpbemJFRKJ2aixr+AZMGiquiqKxaucC6hlpHNZHWgz5R7dS4roHiwq9vDctE//CZ++o0W1Q==}
+
+  prosemirror-transform@1.10.2:
+    resolution: {integrity: sha512-2iUq0wv2iRoJO/zj5mv8uDUriOHWzXRnOTVgCzSXnktS/2iQRa3UUQwVlkBlYZFtygw6Nh1+X4mGqoYBINn5KQ==}
+
+  prosemirror-view@1.38.0:
+    resolution: {integrity: sha512-O45kxXQTaP9wPdXhp8TKqCR+/unS/gnfg9Q93svQcB3j0mlp2XSPAmsPefxHADwzC+fbNS404jqRxm3UQaGvgw==}
+
   punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
@@ -1254,6 +1294,9 @@ packages:
     resolution: {integrity: sha512-489gTVMzAYdiZHFVA/ig/iYFllCcWFHMvUHI1rpFmkoUtRlQxqh6/yiNqnYibjMZ2b/+FUQwldG+aLsEt6bglQ==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
+
+  rope-sequence@1.3.4:
+    resolution: {integrity: sha512-UT5EDe2cu2E/6O4igUr5PSFs23nvvukicWHx6GnOPlHAiiYbzNuCRQCuiUdHJQcqKalLKlrYJnjY0ySGsXNQXQ==}
 
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
@@ -1422,6 +1465,9 @@ packages:
         optional: true
       terser:
         optional: true
+
+  w3c-keyname@2.2.8:
+    resolution: {integrity: sha512-dpojBhNsCNN7T82Tm7k26A6G9ML3NkhDsnw9n/eoxSRlVBB4CEtIQ/KTCLI2Fwf3ataSXRhYFkQi3SlnFwPvPQ==}
 
   which@1.3.1:
     resolution: {integrity: sha512-HxJdYWq1MTIQbJ3nw0cqssHoTNU267KlrDuGZ1WYlxDStUtKUhOaJmh112/TZmHxxUfuJqPXSOm7tDyas0OSIQ==}
@@ -1731,6 +1777,17 @@ snapshots:
       tailwindcss: 4.0.8
       vite: 5.4.14(lightningcss@1.29.1)
 
+  '@toast-ui/editor@3.2.2':
+    dependencies:
+      dompurify: 2.5.8
+      prosemirror-commands: 1.7.0
+      prosemirror-history: 1.4.1
+      prosemirror-inputrules: 1.4.0
+      prosemirror-keymap: 1.2.2
+      prosemirror-model: 1.24.1
+      prosemirror-state: 1.4.3
+      prosemirror-view: 1.38.0
+
   '@types/estree@1.0.6': {}
 
   '@types/json-schema@7.0.15': {}
@@ -1931,6 +1988,8 @@ snapshots:
   dir-glob@3.0.1:
     dependencies:
       path-type: 4.0.0
+
+  dompurify@2.5.8: {}
 
   emoji-regex@8.0.0: {}
 
@@ -2323,6 +2382,8 @@ snapshots:
       type-check: 0.4.0
       word-wrap: 1.2.5
 
+  orderedmap@2.1.1: {}
+
   p-limit@3.1.0:
     dependencies:
       yocto-queue: 0.1.0
@@ -2393,6 +2454,49 @@ snapshots:
 
   prettier@3.5.2: {}
 
+  prosemirror-commands@1.7.0:
+    dependencies:
+      prosemirror-model: 1.24.1
+      prosemirror-state: 1.4.3
+      prosemirror-transform: 1.10.2
+
+  prosemirror-history@1.4.1:
+    dependencies:
+      prosemirror-state: 1.4.3
+      prosemirror-transform: 1.10.2
+      prosemirror-view: 1.38.0
+      rope-sequence: 1.3.4
+
+  prosemirror-inputrules@1.4.0:
+    dependencies:
+      prosemirror-state: 1.4.3
+      prosemirror-transform: 1.10.2
+
+  prosemirror-keymap@1.2.2:
+    dependencies:
+      prosemirror-state: 1.4.3
+      w3c-keyname: 2.2.8
+
+  prosemirror-model@1.24.1:
+    dependencies:
+      orderedmap: 2.1.1
+
+  prosemirror-state@1.4.3:
+    dependencies:
+      prosemirror-model: 1.24.1
+      prosemirror-transform: 1.10.2
+      prosemirror-view: 1.38.0
+
+  prosemirror-transform@1.10.2:
+    dependencies:
+      prosemirror-model: 1.24.1
+
+  prosemirror-view@1.38.0:
+    dependencies:
+      prosemirror-model: 1.24.1
+      prosemirror-state: 1.4.3
+      prosemirror-transform: 1.10.2
+
   punycode@2.3.1: {}
 
   queue-microtask@1.2.3: {}
@@ -2429,6 +2533,8 @@ snapshots:
       '@rollup/rollup-win32-ia32-msvc': 4.34.8
       '@rollup/rollup-win32-x64-msvc': 4.34.8
       fsevents: 2.3.3
+
+  rope-sequence@1.3.4: {}
 
   run-parallel@1.2.0:
     dependencies:
@@ -2605,6 +2711,8 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
       lightningcss: 1.29.1
+
+  w3c-keyname@2.2.8: {}
 
   which@1.3.1:
     dependencies:

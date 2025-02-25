@@ -28,26 +28,32 @@
           >
             Program от qazcloud
           </h1>
-          <a
-            class="hidden md:inline-block text-white transition-opacity ease-in-out text-[12px] leading-[14px] duration-300 p-[8px] md:p-[12px] md:rounded-[8px] rounded-[4px] bg-[#03E4E1] md:text-[24px] md:leading-[26px] text-center active:opacity-60 [@media(hover:hover)]:hover:opacity-60"
-            href="/add-report"
-            >Отправить отчет</a
-          >
         </div>
         <p
           class="text-[12px] leading-[14px] md:text-[24px] md:leading-[26px] mt-[12px]"
         >
           Описание
         </p>
-        <div
-          class="text-[#05EB7D] bg-[#03E477]/45 mt-[12px] p-[10px] md:rounded-[8px] rounded-[4px] md:text-[18px] md:leading-[20px] text-[12px] leading-[14px] md:block hidden"
-        >
-          Пожалуйста, войдите в систему, чтобы отправить отчет.
-        </div>
-        <div
-          class="text-[#DAAB48] bg-[#DAAB48]/45 mt-[12px] p-[10px] md:rounded-[8px] rounded-[4px] md:text-[18px] md:leading-[20px] text-[12px] leading-[14px] md:block hidden"
-        >
-          Программа успешна создана
+        <div class="flex flex-col gap-y-[12px] mt-[12px] lg:hidden">
+          <a
+            class="flex items-center justify-center gap-x-[10px] text-white transition-opacity ease-in-out text-[12px] leading-[14px] duration-300 p-[8px] md:p-[12px] md:rounded-[8px] rounded-[4px] bg-[#03E4E1] md:text-[24px] md:leading-[26px] text-center active:opacity-60 [@media(hover:hover)]:hover:opacity-60"
+            href="/add-report"
+          >
+            <svg
+              class="md:w-[24px] h-auto w-[16px]"
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.8034 3.09766H11.1962C11.0534 3.09766 10.9819 3.16908 10.9819 3.31194V11.7227H3.00042C2.85756 11.7227 2.78613 11.7941 2.78613 11.9369V13.5441C2.78613 13.6869 2.85756 13.7584 3.00042 13.7584H10.9819V22.1691C10.9819 22.3119 11.0534 22.3834 11.1962 22.3834H12.8034C12.9462 22.3834 13.0176 22.3119 13.0176 22.1691V13.7584H21.0004C21.1433 13.7584 21.2147 13.6869 21.2147 13.5441V11.9369C21.2147 11.7941 21.1433 11.7227 21.0004 11.7227H13.0176V3.31194C13.0176 3.16908 12.9462 3.09766 12.8034 3.09766Z"
+                fill="white"
+              />
+            </svg>
+            <span>Добавить программу</span></a
+          >
         </div>
         <div
           class="mt-[12px] md:mt-[36px] grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-[12px]"
@@ -92,23 +98,6 @@
             <p class="text-[#03E4E1]">500 000 ₸</p>
           </article>
         </div>
-        <div class="flex flex-col gap-y-[12px] md:hidden">
-          <div
-            class="text-[#DAAB48] bg-[#DAAB48]/45 mt-[12px] p-[10px] md:rounded-[8px] rounded-[4px] md:text-[18px] md:leading-[20px] text-[12px] leading-[14px]"
-          >
-            Пожалуйста, войдите в систему, чтобы отправить отчет.
-          </div>
-          <div
-            class="text-[#05EB7D] bg-[#03E477]/45 mt-[12px] p-[10px] md:rounded-[8px] rounded-[4px] md:text-[18px] md:leading-[20px] text-[12px] leading-[14px]"
-          >
-            Программа успешна создана
-          </div>
-          <a
-            class="inline-block text-white transition-opacity ease-in-out text-[12px] leading-[14px] duration-300 p-[8px] md:p-[12px] md:rounded-[8px] rounded-[4px] bg-[#03E4E1] md:text-[24px] md:leading-[26px] text-center active:opacity-60 [@media(hover:hover)]:hover:opacity-60"
-            href="/add-report"
-            >Отправить отчет</a
-          >
-        </div>
       </header>
     </div>
   </div>
@@ -116,11 +105,32 @@
 <section class="mt-[24px] md:mt-[64px]">
   <div class="container">
     <div>
-      <h1
-        class="text-[16px] md:text-[36px] uppercase leading-[18px] md:leading-[51px] font-black"
-      >
-        Программы компаний
-      </h1>
+      <div class="flex items-center justify-between">
+        <h1
+          class="text-[16px] md:text-[36px] uppercase leading-[18px] md:leading-[51px] font-black"
+        >
+          Программы компаний
+        </h1>
+        <a
+          class="hidden lg:flex items-center justify-center gap-x-[10px] text-white transition-opacity ease-in-out text-[12px] leading-[14px] duration-300 p-[8px] md:p-[12px] md:rounded-[8px] rounded-[4px] bg-[#03E4E1] md:text-[24px] md:leading-[26px] text-center active:opacity-60 [@media(hover:hover)]:hover:opacity-60"
+          href="/add-report"
+        >
+          <svg
+            class="md:w-[24px] h-auto w-[16px]"
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.8034 3.09766H11.1962C11.0534 3.09766 10.9819 3.16908 10.9819 3.31194V11.7227H3.00042C2.85756 11.7227 2.78613 11.7941 2.78613 11.9369V13.5441C2.78613 13.6869 2.85756 13.7584 3.00042 13.7584H10.9819V22.1691C10.9819 22.3119 11.0534 22.3834 11.1962 22.3834H12.8034C12.9462 22.3834 13.0176 22.3119 13.0176 22.1691V13.7584H21.0004C21.1433 13.7584 21.2147 13.6869 21.2147 13.5441V11.9369C21.2147 11.7941 21.1433 11.7227 21.0004 11.7227H13.0176V3.31194C13.0176 3.16908 12.9462 3.09766 12.8034 3.09766Z"
+              fill="white"
+            />
+          </svg>
+          <span>Добавить программу</span></a
+        >
+      </div>
       <div class="md:mt-[24px] mt-[12px]">
         <div>
           <div>

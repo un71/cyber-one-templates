@@ -1,7 +1,9 @@
+import "@toast-ui/editor/dist/toastui-editor.css";
 import "./index.css";
 import "./menu";
 import "./modal";
 import "./password";
+import "./toast-ui";
 
 document.addEventListener("DOMContentLoaded", () => {
   const dropdown = document.getElementById("lang-switcher") as HTMLElement;

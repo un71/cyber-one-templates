@@ -225,3 +225,15 @@
 .markdown-content a {
   @apply transition-colors duration-300 ease-in-out active:text-[#03E4E1] [@media(hover:hover)]:hover:text-[#03E4E1];
 }
+
+.ProseMirror {
+  @apply text-white;
+}
+
+.table-body-hover tr td {
+  @apply transition-colors duration-300 ease-in-out;
+}
+
+.table-body-hover tr:hover td {
+  @apply bg-[#03E4E1]/25;
+}

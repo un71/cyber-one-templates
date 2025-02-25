@@ -1,7 +1,7 @@
 {% extends "./src/html/layouts/layout.html" %} {% block content %}
 <section>
   <div class="container">
-    <div class="pt-[48px]">
+    <div class="pt-[48px] max-w-[1200px]">
       <header>
         <a
           class="md:text-[24px] md:leading-[26px] text-[12px] leading-[14px] flex items-center gap-x-[10px] text-[#03E4E1] [@media(hover:hover)]:hover:opacity-60 active:opacity-60 transition-opacity ease-in-out duration-300"
@@ -26,339 +26,143 @@
           <h1
             class="text-[16px] md:text-[36px] uppercase leading-[18px] md:leading-[51px] font-black"
           >
-            Program от qazcloud
+            Добавление программы
           </h1>
         </div>
-        <p
-          class="text-[12px] leading-[14px] md:text-[24px] md:leading-[26px] mt-[12px]"
-        >
-          Описание
-        </p>
-        <div class="flex flex-col gap-y-[12px] mt-[12px] lg:hidden">
-          <a
-            class="flex items-center justify-center gap-x-[10px] text-white transition-opacity ease-in-out text-[12px] leading-[14px] duration-300 p-[8px] md:p-[12px] md:rounded-[8px] rounded-[4px] bg-[#03E4E1] md:text-[24px] md:leading-[26px] text-center active:opacity-60 [@media(hover:hover)]:hover:opacity-60"
-            href="/add-report"
-          >
-            <svg
-              class="md:w-[24px] h-auto w-[16px]"
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.8034 3.09766H11.1962C11.0534 3.09766 10.9819 3.16908 10.9819 3.31194V11.7227H3.00042C2.85756 11.7227 2.78613 11.7941 2.78613 11.9369V13.5441C2.78613 13.6869 2.85756 13.7584 3.00042 13.7584H10.9819V22.1691C10.9819 22.3119 11.0534 22.3834 11.1962 22.3834H12.8034C12.9462 22.3834 13.0176 22.3119 13.0176 22.1691V13.7584H21.0004C21.1433 13.7584 21.2147 13.6869 21.2147 13.5441V11.9369C21.2147 11.7941 21.1433 11.7227 21.0004 11.7227H13.0176V3.31194C13.0176 3.16908 12.9462 3.09766 12.8034 3.09766Z"
-                fill="white"
+        <form class="mt-[16px] md:mt-[24px]">
+          <div class="flex flex-col gap-y-[12px] md:gap-y-[24px]">
+            <div class="flex flex-col gap-y-[4px] md:gap-y-[12px]">
+              <label
+                class="text-[12px] leading-[14px] md:text-[28px] md:leading-[30px]"
+                for="name"
+                >Наименование программы:</label
+              >
+              <input
+                class="text-[12px] leading-[14px] placeholder:text-[12px] placeholder:leading-[14px] inline-block rounded-[4px] md:rounded-[8px] text-[#DCDDDE] border border-[#DCDDDE] md:text-[20px] font-normal md:leading-[22px] w-full px-[10px] py-[8px] md:px-[10px] md:py-[12px] placeholder:text-[#777A87] bg-transparent placeholder:md:text-[20px] placeholder:md:leading-[22px] data-[is-error=true]:border-[#DA4848] transition-colors ease-in-out duration-300"
+                id="name"
+                type="text"
+                name="name"
+                required
+                placeholder="ex: Program"
+                data-is-error="true"
               />
-            </svg>
-            <span>Добавить программу</span></a
+              <p
+                class="md:text-[20px] md:leading-[22px] text-[12px] leading-[14px] text-[#DA4848]"
+              >
+                Пропишите буквы
+              </p>
+            </div>
+            <div class="flex flex-col gap-y-[4px] md:gap-y-[12px]">
+              <label
+                class="text-[12px] leading-[14px] md:text-[28px] md:leading-[30px]"
+                for="desc"
+                >Описание:</label
+              >
+              <textarea
+                class="text-[12px] leading-[14px] max-h-[136px] min-h-[136px] placeholder:text-[12px] placeholder:leading-[14px] inline-block rounded-[4px] md:rounded-[8px] text-[#DCDDDE] border border-[#DCDDDE] md:text-[20px] font-normal md:leading-[22px] w-full px-[10px] py-[8px] md:px-[10px] md:py-[12px] placeholder:text-[#777A87] bg-transparent placeholder:md:text-[20px] placeholder:md:leading-[22px] data-[is-error=true]:border-[#DA4848] transition-colors ease-in-out duration-300"
+                id="desc"
+                type="text"
+                name="name"
+                required
+                placeholder="Программа Bug Bounty для платформы GitVerse от СберТеха"
+                data-is-error="false"
+              ></textarea>
+            </div>
+            <div class="flex flex-col gap-y-[4px] md:gap-y-[12px]">
+              <label
+                class="text-[12px] leading-[14px] md:text-[28px] md:leading-[30px]"
+                for="name"
+                >Уровень сложности:</label
+              >
+              <select
+                class="text-[12px] leading-[14px] placeholder:text-[12px] placeholder:leading-[14px] inline-block rounded-[4px] md:rounded-[8px] text-[#DCDDDE] border border-[#DCDDDE] md:text-[20px] font-normal md:leading-[22px] w-full px-[10px] py-[8px] md:px-[10px] md:py-[12px] placeholder:text-[#777A87] bg-transparent placeholder:md:text-[20px] placeholder:md:leading-[22px] data-[is-error=true]:border-[#DA4848] transition-colors ease-in-out duration-300"
+                id="name"
+                type="text"
+                name="name"
+                required
+                placeholder="ex: Program"
+                data-is-error="false"
+              >
+                <option value="1">1</option>
+                <option value="1">1</option>
+                <option value="1">1</option>
+              </select>
+            </div>
+            <div class="flex flex-col gap-y-[4px] md:gap-y-[12px]">
+              <label
+                class="text-[12px] leading-[14px] md:text-[28px] md:leading-[30px]"
+                for="name"
+                >Сумма вознаграждение:</label
+              >
+              <input
+                class="text-[12px] leading-[14px] placeholder:text-[12px] placeholder:leading-[14px] inline-block rounded-[4px] md:rounded-[8px] text-[#DCDDDE] border border-[#DCDDDE] md:text-[20px] font-normal md:leading-[22px] w-full px-[10px] py-[8px] md:px-[10px] md:py-[12px] placeholder:text-[#777A87] bg-transparent placeholder:md:text-[20px] placeholder:md:leading-[22px] data-[is-error=true]:border-[#DA4848] transition-colors ease-in-out duration-300"
+                id="name"
+                type="text"
+                name="name"
+                required
+                placeholder="ex: 200 000"
+                data-is-error="false"
+              />
+            </div>
+            <div class="flex flex-col gap-y-[4px] md:gap-y-[12px]">
+              <label
+                class="text-[12px] leading-[14px] md:text-[28px] md:leading-[30px]"
+                for="name"
+                >Правила программы:</label
+              >
+              <div class="text-white" id="rules-program"></div>
+            </div>
+            <div class="flex flex-col gap-y-[4px] md:gap-y-[12px]">
+              <p
+                class="text-[12px] leading-[14px] md:text-[28px] md:leading-[30px]"
+              >
+                Дополнительные файлы:
+              </p>
+              <label for="files">
+                <span
+                  class="cursor-pointer flex items-center gap-[12px] text-[#03E4E1] transition-opacity ease-in-out duration-300 [@media(hover:hover)]:hover:opacity-60 active:opacity-60"
+                >
+                  <svg
+                    class="md:w-[32px] h-auto"
+                    width="32"
+                    height="33"
+                    viewBox="0 0 32 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.6667 22.0723V11.2056L11.2 14.6723L9.33334 12.7389L16 6.07227L22.6667 12.7389L20.8 14.6723L17.3333 11.2056V22.0723H14.6667ZM8.00001 27.4056C7.26668 27.4056 6.63912 27.1447 6.11734 26.6229C5.59557 26.1012 5.33423 25.4732 5.33334 24.7389V20.7389H8.00001V24.7389H24V20.7389H26.6667V24.7389C26.6667 25.4723 26.4058 26.1003 25.884 26.6229C25.3622 27.1456 24.7342 27.4065 24 27.4056H8.00001Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <span class="md:text-[24px] md:leading-[24px]"
+                    >Прикрепить файл</span
+                  >
+                </span>
+                <input class="sr-only" id="files" type="file" name="files" />
+              </label>
+              <div class="flex flex-col gap-[8px] items-start">
+                <a class="flex items-center gap-x-[12px]" href="#file">
+                  <img
+                    class="md:w-[32px] h-auto"
+                    src="/file-pdf.svg"
+                    width="32"
+                    height="32"
+                    alt="file"
+                  />
+                  <span>правила.pdf</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="inline-block md:mt-[42px] mt-[24px] md:w-min w-full text-white transition-opacity ease-in-out text-[12px] leading-[14px] duration-300 p-[8px] md:p-[12px] md:rounded-[8px] rounded-[4px] bg-[#03E4E1] md:text-[24px] md:leading-[26px] text-center active:opacity-60 [@media(hover:hover)]:hover:opacity-60"
+            type="submit"
           >
-        </div>
-        <div
-          class="mt-[12px] md:mt-[36px] grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-[12px]"
-        >
-          <article
-            class="p-[12px] bg-[#25293F] md:rounded-[8px] rounded-[4px] flex flex-col gap-y-[12px] md:text-[28px] md:leading-[30px] text-[14px] leading-[16px] md:font-bold"
-          >
-            <img
-              class="md:w-[36px] w-[24px] h-auto"
-              src="/doc.svg"
-              width="36"
-              height="36"
-              alt="doc"
-            />
-            <p>Всего отчетов</p>
-            <p class="text-[#03E4E1]">10</p>
-          </article>
-          <article
-            class="p-[12px] bg-[#25293F] md:rounded-[8px] rounded-[4px] flex flex-col gap-y-[12px] md:text-[28px] md:leading-[30px] text-[14px] leading-[16px] md:font-bold"
-          >
-            <img
-              class="md:w-[36px] w-[24px] h-auto"
-              src="/doc-success.svg"
-              width="36"
-              height="36"
-              alt="doc"
-            />
-            <p>Принятые отчеты</p>
-            <p class="text-[#03E4E1]">10</p>
-          </article>
-          <article
-            class="p-[12px] bg-[#25293F] md:rounded-[8px] rounded-[4px] flex flex-col gap-y-[12px] md:text-[28px] md:leading-[30px] text-[14px] leading-[16px] md:font-bold"
-          >
-            <img
-              class="md:w-[36px] w-[24px] h-auto"
-              src="/money.svg"
-              width="36"
-              height="36"
-              alt="doc"
-            />
-            <p>Общая сумма выплат</p>
-            <p class="text-[#03E4E1]">500 000 ₸</p>
-          </article>
-        </div>
+            Сохранить
+          </button>
+        </form>
       </header>
-    </div>
-  </div>
-</section>
-<section class="mt-[24px] md:mt-[64px]">
-  <div class="container">
-    <div>
-      <div class="flex items-center justify-between">
-        <h1
-          class="text-[16px] md:text-[36px] uppercase leading-[18px] md:leading-[51px] font-black"
-        >
-          Программы компаний
-        </h1>
-        <a
-          class="hidden lg:flex items-center justify-center gap-x-[10px] text-white transition-opacity ease-in-out text-[12px] leading-[14px] duration-300 p-[8px] md:p-[12px] md:rounded-[8px] rounded-[4px] bg-[#03E4E1] md:text-[24px] md:leading-[26px] text-center active:opacity-60 [@media(hover:hover)]:hover:opacity-60"
-          href="/add-report"
-        >
-          <svg
-            class="md:w-[24px] h-auto w-[16px]"
-            width="24"
-            height="25"
-            viewBox="0 0 24 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.8034 3.09766H11.1962C11.0534 3.09766 10.9819 3.16908 10.9819 3.31194V11.7227H3.00042C2.85756 11.7227 2.78613 11.7941 2.78613 11.9369V13.5441C2.78613 13.6869 2.85756 13.7584 3.00042 13.7584H10.9819V22.1691C10.9819 22.3119 11.0534 22.3834 11.1962 22.3834H12.8034C12.9462 22.3834 13.0176 22.3119 13.0176 22.1691V13.7584H21.0004C21.1433 13.7584 21.2147 13.6869 21.2147 13.5441V11.9369C21.2147 11.7941 21.1433 11.7227 21.0004 11.7227H13.0176V3.31194C13.0176 3.16908 12.9462 3.09766 12.8034 3.09766Z"
-              fill="white"
-            />
-          </svg>
-          <span>Добавить программу</span></a
-        >
-      </div>
-      <div class="md:mt-[24px] mt-[12px]">
-        <div>
-          <div>
-            <!-- DESKTOP TABLE START -->
-            <div class="overflow-x-auto lg:block hidden">
-              <table class="w-full table-fixed border-collapse">
-                <thead>
-                  <tr
-                    class="[&>th:first-child]:rounded-tl-[12px] [&>th:last-child]:rounded-tr-[12px]"
-                  >
-                    <th
-                      class="text-start text-[16px] bg-[#DCDDDE] leading-[18px] font-normal py-[12px] px-[24px] text-[#16192B]"
-                    >
-                      Программа
-                    </th>
-                    <th
-                      class="text-start text-[16px] bg-[#DCDDDE] leading-[18px] font-normal py-[12px] px-[24px] text-[#16192B]"
-                    >
-                      Максимальная награда
-                    </th>
-                    <th
-                      class="text-start text-[16px] bg-[#DCDDDE] leading-[18px] font-normal py-[12px] px-[24px] text-[#16192B]"
-                    >
-                      Статус
-                    </th>
-                    <th
-                      class="text-start text-[16px] bg-[#DCDDDE] leading-[18px] font-normal py-[12px] px-[24px] text-[#16192B]"
-                    ></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td
-                      class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
-                    >
-                      Program 1
-                    </td>
-                    <td
-                      class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
-                    >
-                      Program 1
-                    </td>
-                    <td
-                      class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
-                    >
-                      <span
-                        class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#03E477]/45 text-[#05EB7D]"
-                        >Активна</span
-                      >
-                      <!-- <span
-                        class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E44303]/45 text-[#E44303]"
-                        >Не активна</span
-                      > -->
-                    </td>
-                    <td
-                      class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
-                    >
-                      <div class="flex justify-end">
-                        <a
-                          class="inline-block [@media(hover:hover)]:hover:opacity-60 active:opacity-60 transition-opacity ease-in-out duration-300 text-[#03E4E1]"
-                          href="/#program-article"
-                          >Подробнее</a
-                        >
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
-                    >
-                      Program 1
-                    </td>
-                    <td
-                      class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
-                    >
-                      Program 1
-                    </td>
-                    <td
-                      class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
-                    >
-                      <!-- <span
-                        class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#03E477]/45 text-[#05EB7D]"
-                        >Активна</span
-                      > -->
-                      <span
-                        class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E44303]/45 text-[#E44303]"
-                        >Не активна</span
-                      >
-                    </td>
-                    <td
-                      class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
-                    >
-                      <div class="flex justify-end">
-                        <a
-                          class="inline-block [@media(hover:hover)]:hover:opacity-60 active:opacity-60 transition-opacity ease-in-out duration-300 text-[#03E4E1]"
-                          href="/#program-article"
-                          >Подробнее</a
-                        >
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- DESKTOP TABLE END -->
-
-            <!-- MOBILE TABLE START -->
-            <div class="flex flex-col gap-y-[12px] lg:hidden">
-              <a class="bg-[#25293F] rounded-[8px]" href="/#article">
-                <div class="py-[8px] px-[12px]">
-                  <span
-                    class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#03E477]/45 text-[#05EB7D]"
-                    >Активна</span
-                  >
-                  <!-- <span
-                  class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E44303]/45 text-[#E44303]"
-                  >Не активна</span
-                > -->
-                </div>
-                <div class="border-t border-t-[#03E4E1] p-[12px]">
-                  <div
-                    class="mt-[8px] flex items-center gap-[8px] flex-wrap text-[12px] leading-[14px]"
-                  >
-                    <p>Program 1</p>
-                  </div>
-                  <p class="mt-[8px] text-[14px] leading-[16px] text-[#03E4E1]">
-                    Максимальная награда: 5000$
-                  </p>
-                </div>
-              </a>
-              <a class="bg-[#25293F] rounded-[8px]" href="/#article">
-                <div class="py-[8px] px-[12px]">
-                  <!-- <span
-                    class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#03E477]/45 text-[#05EB7D]"
-                    >Активна</span
-                  > -->
-                  <span
-                    class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E44303]/45 text-[#E44303]"
-                    >Не активна</span
-                  >
-                </div>
-                <div class="border-t border-t-[#03E4E1] p-[12px]">
-                  <div
-                    class="mt-[8px] flex items-center gap-[8px] flex-wrap text-[12px] leading-[14px]"
-                  >
-                    <p>Program 1</p>
-                  </div>
-                  <p class="mt-[8px] text-[14px] leading-[16px] text-[#03E4E1]">
-                    Максимальная награда: 5000$
-                  </p>
-                </div>
-              </a>
-            </div>
-            <!-- MOBILE TABLE END -->
-          </div>
-          <div
-            class="flex items-center justify-center md:justify-end mt-[12px] md:mt-[24px]"
-          >
-            <div class="flex items-center gap-[12px] md:gap-[24px] flex-wrap">
-              <button
-                class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
-                type="button"
-              >
-                <svg
-                  width="20"
-                  height="21"
-                  viewBox="0 0 20 21"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M14.7327 4.18172V2.45628C14.7327 2.30672 14.5608 2.22413 14.4447 2.31565L4.38224 10.175C4.29674 10.2415 4.22756 10.3267 4.17998 10.4239C4.13239 10.5212 4.10765 10.6281 4.10765 10.7364C4.10765 10.8447 4.13239 10.9516 4.17998 11.0489C4.22756 11.1462 4.29674 11.2313 4.38224 11.2978L14.4447 19.1572C14.563 19.2487 14.7327 19.1661 14.7327 19.0165V17.2911C14.7327 17.1817 14.6813 17.0768 14.5965 17.0098L6.56081 10.7375L14.5965 4.46297C14.6813 4.39601 14.7327 4.2911 14.7327 4.18172Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
-              <button
-                class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
-                type="button"
-                aria-selected="true"
-              >
-                1
-              </button>
-              <button
-                class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
-                type="button"
-              >
-                2
-              </button>
-              <button
-                class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
-                type="button"
-              >
-                3
-              </button>
-              <button
-                class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
-                type="button"
-              >
-                4
-              </button>
-              <button
-                class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
-                type="button"
-              >
-                5
-              </button>
-              <button
-                class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
-                type="button"
-              >
-                <svg
-                  width="20"
-                  height="21"
-                  viewBox="0 0 20 21"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.26732 4.18172V2.45628C5.26732 2.30672 5.43919 2.22413 5.55526 2.31565L15.6178 10.175C15.7033 10.2415 15.7724 10.3267 15.82 10.4239C15.8676 10.5212 15.8923 10.6281 15.8923 10.7364C15.8923 10.8447 15.8676 10.9516 15.82 11.0489C15.7724 11.1462 15.7033 11.2313 15.6178 11.2978L5.55526 19.1572C5.43696 19.2487 5.26732 19.1661 5.26732 19.0165V17.2911C5.26732 17.1817 5.31866 17.0768 5.40348 17.0098L13.4392 10.7375L5.40348 4.46297C5.31866 4.39601 5.26732 4.2911 5.26732 4.18172V4.18172Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>

@@ -11,6 +11,7 @@
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@tailwindcss/vite": "^4.0.8",
+    "editor": "link:@types/@toast-ui/editor",
     "eslint": "^9.21.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.3",
@@ -33,5 +34,8 @@
     "onlyBuiltDependencies": [
       "esbuild"
     ]
+  },
+  "dependencies": {
+    "@toast-ui/editor": "^3.2.2"
   }
 }
