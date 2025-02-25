@@ -203,3 +203,25 @@
     transform: translateX(-50%);
   }
 }
+
+.markdown-content {
+  @apply text-[14px] leading-[16px] md:text-[20px] md:leading-[22px];
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  @apply my-[12px] text-[14px] leading-[16px] font-bold md:my-[24px] md:text-[28px] md:leading-[32px];
+}
+
+.markdown-content span,
+.markdown-content p {
+  @apply my-[8px] md:my-[16px];
+}
+
+.markdown-content a {
+  @apply transition-colors duration-300 ease-in-out active:text-[#03E4E1] [@media(hover:hover)]:hover:text-[#03E4E1];
+}

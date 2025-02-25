@@ -1,0 +1,187 @@
+{% extends "./src/html/layouts/layout.html" %} {% block content %}
+<section>
+  <div class="container">
+    <div class="pt-[48px]">
+      <a
+        class="md:text-[24px] md:leading-[26px] text-[12px] leading-[14px] flex items-center gap-x-[10px] text-[#03E4E1] [@media(hover:hover)]:hover:opacity-60 active:opacity-60 transition-opacity ease-in-out duration-300 mt-[24px] md:mt-[61px]"
+        href="/moderation"
+      >
+        <svg
+          class="w-[12px] md:w-[24px] h-auto"
+          width="24"
+          height="25"
+          viewBox="0 0 24 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M21.6423 11.8772H5.96999L15.3503 3.73438C15.5003 3.60313 15.4093 3.35938 15.2111 3.35938H12.8405C12.7361 3.35938 12.6369 3.39687 12.5593 3.46384L2.43695 12.2469C2.34424 12.3272 2.26989 12.4266 2.21893 12.5382C2.16797 12.6498 2.1416 12.7711 2.1416 12.8938C2.1416 13.0164 2.16797 13.1377 2.21893 13.2493C2.26989 13.3609 2.34424 13.4603 2.43695 13.5406L12.6182 22.3772C12.6584 22.4121 12.7066 22.4308 12.7575 22.4308H15.2084C15.4066 22.4308 15.4977 22.1844 15.3477 22.0558L5.96999 13.9129H21.6423C21.7602 13.9129 21.8566 13.8165 21.8566 13.6987V12.0915C21.8566 11.9737 21.7602 11.8772 21.6423 11.8772Z"
+            fill="currentColor"
+          />
+        </svg>
+        <span>Назад</span>
+      </a>
+      <h1
+        class="text-[16px] mt-[4px] md:mt-[12px] md:text-[36px] uppercase leading-[18px] md:leading-[51px] font-black"
+      >
+        Account takeover
+      </h1>
+      <div class="md:mt-[36px] mt-[12px]">
+        <div class="flex flex-col items-start gap-y-[8px] md:gap-y-[12px]">
+          <p
+            class="md:text-[24px] md:leading-[26px] text-[12px] leading-[14px]"
+          >
+            Статус отчета
+          </p>
+          <span
+            class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#03E477]/45 text-[#05EB7D]"
+            >Одобрен</span
+          >
+          <!-- <span
+            class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E4A003]/45 text-[#EBD005]"
+            >В ожидании</span
+          > -->
+          <!-- <span
+            class="text-[14px] rounded-[4px] leading-[16px] py-[4px] px-[10px] md:text-[16px] md:leading-[18px] inline-block md:py-[8px] md:px-[10px] md:rounded-[8px] bg-[#E44303]/45 text-[#E44303]"
+            >Отклонен</span
+          > -->
+        </div>
+        <div
+          class="grid md:mt-[24px] mt-[12px] grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-[8px] md:gap-y-[24px] gap-y-[12px] bg-[#25293F] rounded-[8px] md:p-[12px] p-[8px] md:rounded-[16px]"
+        >
+          <div
+            class="text-[14px] leading-[16px] gap-y-[4px] flex flex-col md:gap-y-[12px] md:text-[24px] md:leading-[26px]"
+          >
+            <p class="text-[#777A87]">Задача:</p>
+            <p>Bugbounty.bi.zone</p>
+          </div>
+          <div
+            class="text-[14px] leading-[16px] gap-y-[4px] flex flex-col md:gap-y-[12px] md:text-[24px] md:leading-[26px]"
+          >
+            <p class="text-[#777A87]">Исследователь:</p>
+            <p>nickname</p>
+          </div>
+          <div
+            class="text-[14px] leading-[16px] gap-y-[4px] flex flex-col md:gap-y-[12px] md:text-[24px] md:leading-[26px]"
+          >
+            <p class="text-[#777A87]">Программа:</p>
+            <p>Bug Bounty</p>
+          </div>
+          <div
+            class="text-[14px] leading-[16px] gap-y-[4px] flex flex-col md:gap-y-[12px] md:text-[24px] md:leading-[26px]"
+          >
+            <p class="text-[#777A87]">Статус:</p>
+            <p>Публичный</p>
+          </div>
+          <div
+            class="text-[14px] leading-[16px] gap-y-[4px] flex flex-col md:gap-y-[12px] md:text-[24px] md:leading-[26px]"
+          >
+            <p class="text-[#777A87]">Уровень:</p>
+            <p>Высокий</p>
+          </div>
+          <div
+            class="text-[14px] leading-[16px] gap-y-[4px] flex flex-col md:gap-y-[12px] md:text-[24px] md:leading-[26px]"
+          >
+            <p class="text-[#777A87]">Вознаграждение:</p>
+            <p>200 000</p>
+          </div>
+          <div
+            class="text-[14px] leading-[16px] gap-y-[4px] flex flex-col md:gap-y-[12px] md:text-[24px] md:leading-[26px]"
+          >
+            <p class="text-[#777A87]">Дата:</p>
+            <p>12.02,2024 14:15</p>
+          </div>
+          <div
+            class="text-[14px] leading-[16px] gap-y-[4px] flex flex-col md:gap-y-[12px] md:text-[24px] md:leading-[26px]"
+          >
+            <p class="text-[#777A87]">Публичный:</p>
+            <p>10.02,2024 14:15</p>
+          </div>
+        </div>
+        <div class="mt-[12px] md:mt-[24px] markdown-content">
+          <h2>Заголовок</h2>
+          <p>
+            Уязвимость заключается в наличии возможности у авторизованного на
+            площадке администратора какой-либо программы осуществить изменение
+            данных (username, phone, email, fullName) для всех пользователей
+            площадки.
+          </p>
+          <p>
+            В случае аккаунтов багхантеров изменение данных ведет к угону
+            аккаунтов (через восстановление аккаунта по почте)
+          </p>
+          <p>
+            В случае администраторов программ - ведет к блокировке им
+            возможности входа в аккаунт (Account takeover невозможен, т.к.
+            восстановление для админов отключено)
+          </p>
+          <img
+            class="w-full h-auto"
+            src="/article-mock.jpg"
+            width="1793"
+            height="709"
+            alt="article"
+          />
+          <h2>Заголовок</h2>
+          <p>
+            Уязвимость заключается в наличии возможности у авторизованного на
+            площадке администратора какой-либо программы осуществить изменение
+            данных (username, phone, email, fullName) для всех пользователей
+            площадки.
+          </p>
+          <p>
+            В случае аккаунтов багхантеров изменение данных ведет к угону
+            аккаунтов (через восстановление аккаунта по почте)
+          </p>
+          <p>
+            В случае администраторов программ - ведет к блокировке им
+            возможности входа в аккаунт (Account takeover невозможен, т.к.
+            восстановление для админов отключено)
+          </p>
+          <div>
+            <p>Дополнительные файлы:</p>
+            <div class="flex items-center gap-[12px] md:gap-[24px] flex-wrap">
+              <a class="flex items-center gap-[12px]" href="#document">
+                <img
+                  class="md:w-[32px] w-[16px] h-auto"
+                  src="/file-pdf.svg"
+                  width="32"
+                  height="32"
+                  alt="Download"
+                />
+                <span>Doc.pdf</span>
+              </a>
+              <a class="flex items-center gap-[12px]" href="#document">
+                <img
+                  class="md:w-[32px] w-[16px] h-auto"
+                  src="/file-pdf.svg"
+                  width="32"
+                  height="32"
+                  alt="Download"
+                />
+                <span>Doc.pdf</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 md:flex items-center gap-[8px] md:gap-[12px] md:mt-[48px] mt-[24px]"
+        >
+          <button
+            class="bg-transparent border-[#DA4848] border text-[12px] leading-[14px] md:text-[24px] md:leading-[26px] text-[#DA4848] cursor-pointer md:rounded-[8px] rounded-[4px] p-[8px] md:p-[12px]"
+            type="button"
+          >
+            Отклонить
+          </button>
+          <button
+            class="bg-[#03E4E1] text-[12px] border border-transparent leading-[14px] md:text-[24px] md:leading-[26px] text-white cursor-pointer md:rounded-[8px] rounded-[4px] p-[8px] md:p-[12px]"
+            type="button"
+          >
+            Отправить
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
