@@ -1,0 +1,381 @@
+{% extends "./src/html/layouts/layout.html" %} {% block content %}
+<section>
+  <div class="container">
+    <div class="pt-[48px]">
+      <header>
+        <a
+          class="md:text-[24px] md:leading-[26px] text-[12px] leading-[14px] flex items-center gap-x-[10px] text-[#03E4E1] [@media(hover:hover)]:hover:opacity-60 active:opacity-60 transition-opacity ease-in-out duration-300"
+          href="/programs"
+        >
+          <svg
+            class="w-[12px] md:w-[24px] h-auto"
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.6423 11.8772H5.96999L15.3503 3.73438C15.5003 3.60313 15.4093 3.35938 15.2111 3.35938H12.8405C12.7361 3.35938 12.6369 3.39687 12.5593 3.46384L2.43695 12.2469C2.34424 12.3272 2.26989 12.4266 2.21893 12.5382C2.16797 12.6498 2.1416 12.7711 2.1416 12.8938C2.1416 13.0164 2.16797 13.1377 2.21893 13.2493C2.26989 13.3609 2.34424 13.4603 2.43695 13.5406L12.6182 22.3772C12.6584 22.4121 12.7066 22.4308 12.7575 22.4308H15.2084C15.4066 22.4308 15.4977 22.1844 15.3477 22.0558L5.96999 13.9129H21.6423C21.7602 13.9129 21.8566 13.8165 21.8566 13.6987V12.0915C21.8566 11.9737 21.7602 11.8772 21.6423 11.8772Z"
+              fill="currentColor"
+            />
+          </svg>
+          <span>Назад</span>
+        </a>
+        <div class="flex items-center justify-between mt-[12px]">
+          <h1
+            class="text-[16px] md:text-[36px] uppercase leading-[18px] md:leading-[51px] font-black"
+          >
+            Program от qazcloud
+          </h1>
+          <a
+            class="hidden md:inline-block text-white transition-opacity ease-in-out text-[12px] leading-[14px] duration-300 p-[8px] md:p-[12px] md:rounded-[8px] rounded-[4px] bg-[#03E4E1] md:text-[24px] md:leading-[26px] text-center active:opacity-60 [@media(hover:hover)]:hover:opacity-60"
+            href="/add-report"
+            >Отправить отчет</a
+          >
+        </div>
+        <div
+          class="text-[#05EB7D] bg-[#03E477]/45 mt-[12px] p-[10px] md:rounded-[8px] rounded-[4px] md:text-[18px] md:leading-[20px] text-[12px] leading-[14px] md:block hidden"
+        >
+          Пожалуйста, войдите в систему, чтобы отправить отчет.
+        </div>
+        <div
+          class="text-[#DAAB48] bg-[#DAAB48]/45 mt-[12px] p-[10px] md:rounded-[8px] rounded-[4px] md:text-[18px] md:leading-[20px] text-[12px] leading-[14px] md:block hidden"
+        >
+          Пожалуйста, войдите в систему, чтобы отправить отчет.
+        </div>
+        <div
+          class="mt-[12px] md:mt-[36px] grid grid-cols-1 md:grid-cols-2 gap-[12px]"
+        >
+          <article
+            class="p-[12px] bg-[#25293F] md:rounded-[8px] rounded-[4px] flex flex-col gap-y-[12px] md:text-[28px] md:leading-[30px] text-[14px] leading-[16px] md:font-bold"
+          >
+            <img
+              class="md:w-[36px] w-[24px] h-auto"
+              src="/money.svg"
+              width="36"
+              height="36"
+              alt="doc"
+            />
+            <p>Минимальная награда</p>
+            <p class="text-[#03E4E1]">500 000 ₸</p>
+          </article>
+          <article
+            class="p-[12px] bg-[#25293F] md:rounded-[8px] rounded-[4px] flex flex-col gap-y-[12px] md:text-[28px] md:leading-[30px] text-[14px] leading-[16px] md:font-bold"
+          >
+            <img
+              class="md:w-[36px] w-[24px] h-auto"
+              src="/money.svg"
+              width="36"
+              height="36"
+              alt="doc"
+            />
+            <p>Максимальная награда</p>
+            <p class="text-[#03E4E1]">500 000 ₸</p>
+          </article>
+        </div>
+        <div class="md:mt-[24px] mt-[12px]">
+          <p
+            class="font-normal text-[16px] leading-[18px] md:text-[28px] md:leading-[30px] md:font-bold"
+          >
+            Описание
+          </p>
+          <div
+            class="md:text-[20px] md:leading-[22px] md:mt-[16px] mt-[4px] text-[12px] leading-[14px]"
+          >
+            <p>
+              Уязвимость заключается в наличии возможности у авторизованного на
+              площадке администратора какой-либо программы осуществить изменение
+              данных (username, phone, email, fullName) для всех пользователей
+              площадки.
+            </p>
+            <p>
+              В случае аккаунтов багхантеров изменение данных ведет к угону
+              аккаунтов (через восстановление аккаунта по почте)
+            </p>
+            <p>
+              В случае администраторов программ - ведет к блокировке им
+              возможности входа в аккаунт (Account takeover невозможен, т.к.
+              восстановление для админов отключено)
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-[12px] md:hidden">
+          <div
+            class="text-[#DAAB48] bg-[#DAAB48]/45 mt-[12px] p-[10px] md:rounded-[8px] rounded-[4px] md:text-[18px] md:leading-[20px] text-[12px] leading-[14px]"
+          >
+            Пожалуйста, войдите в систему, чтобы отправить отчет.
+          </div>
+          <div
+            class="text-[#05EB7D] bg-[#03E477]/45 mt-[12px] p-[10px] md:rounded-[8px] rounded-[4px] md:text-[18px] md:leading-[20px] text-[12px] leading-[14px]"
+          >
+            Отчет успешно создан
+          </div>
+          <div
+            class="text-[#DA4848] bg-[#DA4848]/45 mt-[12px] p-[10px] md:rounded-[8px] rounded-[4px] md:text-[18px] md:leading-[20px] text-[12px] leading-[14px]"
+          >
+            Отчет удален
+          </div>
+          <a
+            class="inline-block text-white transition-opacity ease-in-out text-[12px] leading-[14px] duration-300 p-[8px] md:p-[12px] md:rounded-[8px] rounded-[4px] bg-[#03E4E1] md:text-[24px] md:leading-[26px] text-center active:opacity-60 [@media(hover:hover)]:hover:opacity-60"
+            href="/add-report"
+            >Отправить отчет</a
+          >
+        </div>
+      </header>
+    </div>
+  </div>
+</section>
+<section class="mt-[24px] md:mt-[64px]">
+  <div class="container">
+    <div>
+      <h1
+        class="text-[16px] md:text-[36px] uppercase leading-[18px] md:leading-[51px] font-black"
+      >
+        Программы компаний
+      </h1>
+      <div class="md:mt-[24px] mt-[12px]">
+        <div>
+          <div>
+            <!-- DESKTOP TABLE START -->
+            <div class="overflow-x-auto lg:block hidden">
+              <table class="w-full table-fixed border-collapse">
+                <thead>
+                  <tr
+                    class="[&>th:first-child]:rounded-tl-[12px] [&>th:last-child]:rounded-tr-[12px]"
+                  >
+                    <th
+                      class="text-start text-[16px] bg-[#DCDDDE] leading-[18px] font-normal py-[12px] px-[24px] text-[#16192B]"
+                    >
+                      Автор отчета
+                    </th>
+                    <th
+                      class="text-start text-[16px] bg-[#DCDDDE] leading-[18px] font-normal py-[12px] px-[24px] text-[#16192B]"
+                    >
+                      Добавил отчет
+                    </th>
+                    <th
+                      class="text-start text-[16px] bg-[#DCDDDE] leading-[18px] font-normal py-[12px] px-[24px] text-[#16192B]"
+                    ></th>
+                  </tr>
+                </thead>
+                <tbody class="table-body-hover">
+                  <tr>
+                    <td
+                      class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                    >
+                      <div class="flex items-center gap-[8px] flex-wrap">
+                        <div
+                          class="size-[44px] overflow-hidden bg-[#D9D9D9] rounded-full"
+                        >
+                          <img
+                            class="w-full h-full object-cover"
+                            src="/mock-avatar.png"
+                            width="44"
+                            height="44"
+                            alt="nickname"
+                          />
+                        </div>
+                        <span>nickname</span>
+                      </div>
+                    </td>
+                    <td
+                      class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                    >
+                      12.02.2024 14:32
+                    </td>
+                    <td
+                      class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                    >
+                      <div class="flex justify-end">
+                        <a
+                          class="inline-block [@media(hover:hover)]:hover:opacity-60 active:opacity-60 transition-opacity ease-in-out duration-300 text-[#03E4E1]"
+                          href="/#program-article"
+                          >Подробнее</a
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                    >
+                      <div class="flex items-center gap-[8px] flex-wrap">
+                        <div
+                          class="size-[44px] overflow-hidden bg-[#D9D9D9] rounded-full"
+                        >
+                          <img
+                            class="w-full h-full object-cover"
+                            src="/mock-avatar.png"
+                            width="44"
+                            height="44"
+                            alt="nickname"
+                          />
+                        </div>
+                        <span>nickname</span>
+                      </div>
+                    </td>
+                    <td
+                      class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                    >
+                      12.02.2024 14:32
+                    </td>
+                    <td
+                      class="text-[#DCDDDE] p-[24px] bg-[#25293F] text-[16px] leading-[18px] font-normal"
+                    >
+                      <div class="flex justify-end">
+                        <a
+                          class="inline-block [@media(hover:hover)]:hover:opacity-60 active:opacity-60 transition-opacity ease-in-out duration-300 text-[#03E4E1]"
+                          href="/#program-article"
+                          >Подробнее</a
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- DESKTOP TABLE END -->
+
+            <!-- MOBILE TABLE START -->
+            <div class="flex flex-col gap-y-[12px] lg:hidden">
+              <a class="bg-[#25293F] rounded-[8px]" href="/#article">
+                <div class="py-[8px] px-[12px]">
+                  <div class="flex items-center gap-[8px] flex-wrap">
+                    <div
+                      class="size-[44px] overflow-hidden bg-[#D9D9D9] rounded-full"
+                    >
+                      <img
+                        class="w-full h-full object-cover"
+                        src="/mock-avatar.png"
+                        width="44"
+                        height="44"
+                        alt="nickname"
+                      />
+                    </div>
+                    <span>nickname</span>
+                  </div>
+                </div>
+                <div class="border-t border-t-[#03E4E1] p-[12px]">
+                  <div
+                    class="mt-[8px] flex items-center gap-[8px] flex-wrap text-[12px] leading-[14px]"
+                  >
+                    <p>Program 1</p>
+                  </div>
+                  <div
+                    class="flex items-center gap-[8px] mt-[8px] flex-wrap text-[10px] leading-[12px] text-[#777A87]"
+                  >
+                    <p>Добавил отчет: 12.02.2024 14:32</p>
+                  </div>
+                </div>
+              </a>
+              <a class="bg-[#25293F] rounded-[8px]" href="/#article">
+                <div class="py-[8px] px-[12px]">
+                  <div class="flex items-center gap-[8px] flex-wrap">
+                    <div
+                      class="size-[44px] overflow-hidden bg-[#D9D9D9] rounded-full"
+                    >
+                      <img
+                        class="w-full h-full object-cover"
+                        src="/mock-avatar.png"
+                        width="44"
+                        height="44"
+                        alt="nickname"
+                      />
+                    </div>
+                    <span>nickname</span>
+                  </div>
+                </div>
+                <div class="border-t border-t-[#03E4E1] p-[12px]">
+                  <div
+                    class="mt-[8px] flex items-center gap-[8px] flex-wrap text-[12px] leading-[14px]"
+                  >
+                    <p>Program 1</p>
+                  </div>
+                  <div
+                    class="flex items-center gap-[8px] mt-[8px] flex-wrap text-[10px] leading-[12px] text-[#777A87]"
+                  >
+                    <p>ТДобавил отчет: 12.02.2024 14:32</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- MOBILE TABLE END -->
+          </div>
+          <div
+            class="flex items-center justify-center md:justify-end mt-[12px] md:mt-[24px]"
+          >
+            <div class="flex items-center gap-[12px] md:gap-[24px] flex-wrap">
+              <button
+                class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
+                type="button"
+              >
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.7327 4.18172V2.45628C14.7327 2.30672 14.5608 2.22413 14.4447 2.31565L4.38224 10.175C4.29674 10.2415 4.22756 10.3267 4.17998 10.4239C4.13239 10.5212 4.10765 10.6281 4.10765 10.7364C4.10765 10.8447 4.13239 10.9516 4.17998 11.0489C4.22756 11.1462 4.29674 11.2313 4.38224 11.2978L14.4447 19.1572C14.563 19.2487 14.7327 19.1661 14.7327 19.0165V17.2911C14.7327 17.1817 14.6813 17.0768 14.5965 17.0098L6.56081 10.7375L14.5965 4.46297C14.6813 4.39601 14.7327 4.2911 14.7327 4.18172Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <button
+                class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
+                type="button"
+                aria-selected="true"
+              >
+                1
+              </button>
+              <button
+                class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
+                type="button"
+              >
+                2
+              </button>
+              <button
+                class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
+                type="button"
+              >
+                3
+              </button>
+              <button
+                class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
+                type="button"
+              >
+                4
+              </button>
+              <button
+                class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
+                type="button"
+              >
+                5
+              </button>
+              <button
+                class="h-[30px] min-w-[30px] flex items-center justify-center text-[#03E4E1] transition-colors ease-in-out duration-300 [@media(hover:hover)]:hover:bg-[#03E4E1]/25 [@media(hover:hover)]:hover:text-white cursor-pointer rounded-[4px] active:bg-[#03E4E1] active:text-white aria-[selected=true]:bg-[#03E4E1] aria-[selected=true]:text-white text-[12px] leading-none md:text-[24px]"
+                type="button"
+              >
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.26732 4.18172V2.45628C5.26732 2.30672 5.43919 2.22413 5.55526 2.31565L15.6178 10.175C15.7033 10.2415 15.7724 10.3267 15.82 10.4239C15.8676 10.5212 15.8923 10.6281 15.8923 10.7364C15.8923 10.8447 15.8676 10.9516 15.82 11.0489C15.7724 11.1462 15.7033 11.2313 15.6178 11.2978L5.55526 19.1572C5.43696 19.2487 5.26732 19.1661 5.26732 19.0165V17.2911C5.26732 17.1817 5.31866 17.0768 5.40348 17.0098L13.4392 10.7375L5.40348 4.46297C5.31866 4.39601 5.26732 4.2911 5.26732 4.18172V4.18172Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
