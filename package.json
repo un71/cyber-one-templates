@@ -11,12 +11,12 @@
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@tailwindcss/vite": "^4.0.8",
-    "editor": "link:@types/@toast-ui/editor",
     "eslint": "^9.21.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "globals": "^16.0.0",
+    "patch-package": "^8.0.0",
     "prettier": "^3.5.2",
     "prettier-plugin-organize-attributes": "^1.0.0",
     "prettier-plugin-tailwindcss": "^0.6.11",
@@ -30,12 +30,8 @@
     "vite": "^5.4.14",
     "vite-plugin-nunjucks": "^0.2.0"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
-  },
   "dependencies": {
-    "@toast-ui/editor": "^3.2.2"
+    "@toast-ui/editor": "^3.2.2",
+    "dompurify": "^2.4.2"
   }
 }
